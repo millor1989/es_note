@@ -1,0 +1,486 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Query DSL · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="query-dsl/001.html" />
+    
+    
+    <link rel="prev" href="search-apis/request-body-search.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="api-conventions.html">
+            
+                <a href="api-conventions.html">
+            
+                    
+                    API 约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="document-apis.html">
+            
+                <a href="document-apis.html">
+            
+                    
+                    Document APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="document-apis/index-api.html">
+            
+                <a href="document-apis/index-api.html">
+            
+                    
+                    Index API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="document-apis/get-api.html">
+            
+                <a href="document-apis/get-api.html">
+            
+                    
+                    Get Delete
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="document-apis/update-api.html">
+            
+                <a href="document-apis/update-api.html">
+            
+                    
+                    Update Multi_Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="document-apis/bulk-api.html">
+            
+                <a href="document-apis/bulk-api.html">
+            
+                    
+                    Bulk Reindex Termvectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="search-apis.html">
+            
+                <a href="search-apis.html">
+            
+                    
+                    Search APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="search-apis/uri-search.html">
+            
+                <a href="search-apis/uri-search.html">
+            
+                    
+                    URI Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="search-apis/request-body-search.html">
+            
+                <a href="search-apis/request-body-search.html">
+            
+                    
+                    Request Body Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="query-dsl.html">
+            
+                <a href="query-dsl.html">
+            
+                    
+                    Query DSL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="query-dsl/001.html">
+            
+                <a href="query-dsl/001.html">
+            
+                    
+                    全文检索
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="java-api.html">
+            
+                <a href="java-api.html">
+            
+                    
+                    Java API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Query DSL</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="query-dsl">Query DSL</h3>
+<p>Es&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;Query DSL&#xFF08;REST Query DSL&#xFF0C;ES &#x7684; Java API &#x63D0;&#x4F9B;&#x4E86;&#x4E0E; REST Query DSL &#x7C7B;&#x4F3C;&#x7684; Java Query DSL&#xFF09;&#xFF0C;&#x57FA;&#x4E8E;JSON&#x6765;&#x5B9A;&#x4E49;&#x67E5;&#x8BE2;&#x3002;&#x53EF;&#x4EE5;&#x5C06; Query DSL &#x5F53;&#x4F5C;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x7684; AST&#xFF08;Abstract Syntax Tree&#xFF0C;&#x62BD;&#x8C61;&#x8BED;&#x6CD5;&#x6811;&#xFF09;&#xFF0C;&#x7531;&#x4E24;&#x7C7B;&#x8BED;&#x53E5;&#x7EC4;&#x6210;&#xFF1A;</p>
+<ul>
+<li><h5 id="&#x53F6;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#xFF08;leaf-query-clauses&#xFF09;">&#x53F6;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#xFF08;Leaf query clauses&#xFF09;</h5>
+<p>&#x53F6;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x5728;&#x7279;&#x5B9A;&#x7684;&#x5C5E;&#x6027;&#x4E2D;&#x67E5;&#x8BE2;&#x7279;&#x5B9A;&#x7684;&#x503C;&#xFF0C;&#x6BD4;&#x5982;<code>match</code>&#xFF0C;<code>term</code>&#x6216;&#x8005;<code>range</code>&#x67E5;&#x8BE2;&#x3002;&#x8FD9;&#x4E9B;&#x67E5;&#x8BE2;&#x53EF;&#x4EE5;&#x5355;&#x72EC;&#x4F7F;&#x7528;&#x3002;</p>
+</li>
+<li><h5 id="&#x6DF7;&#x5408;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#xFF08;compound-query-clauses&#xFF09;">&#x6DF7;&#x5408;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#xFF08;Compound query clauses&#xFF09;</h5>
+<p>&#x6DF7;&#x5408;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x5305;&#x62EC;&#x7740;&#x5176;&#x5B83;&#x53F6;&#x67E5;&#x8BE2;&#x6216;&#x8005;&#x6DF7;&#x5408;&#x67E5;&#x8BE2;&#xFF0C;&#x7528;&#x4E8E;&#x4EE5;&#x4E00;&#x4E2A;&#x903B;&#x8F91;&#x98CE;&#x683C;&#xFF08;&#x6BD4;&#x5982;<code>bool</code>&#x67E5;&#x8BE2;&#x6216;&#x8005;<code>dis_max</code>&#x67E5;&#x8BE2;&#xFF09;&#x7EC4;&#x5408;&#x591A;&#x4E2A;&#x67E5;&#x8BE2;&#xFF0C;&#x6216;&#x8005;&#x4FEE;&#x6539;&#x5B83;&#x4EEC;&#x7684;&#x884C;&#x4E3A;&#xFF08;&#x6BD4;&#x5982;<code>constant_score</code>&#x67E5;&#x8BE2;&#xFF09;&#x3002;</p>
+</li>
+</ul>
+<p>&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x7528;&#x5728;&#x67E5;&#x8BE2;&#x4E0A;&#x4E0B;&#x6587;&#xFF08;query context&#xFF09;&#x6216;&#x8005;&#x8FC7;&#x6EE4;&#x4E0A;&#x4E0B;&#x6587;&#xFF08;filter context&#xFF09;&#x4E2D;&#x65F6;&#xFF0C;&#x4F1A;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x884C;&#x4E3A;&#x3002;</p>
+<ul>
+<li><h5 id="&#x67E5;&#x8BE2;&#x4E0A;&#x4E0B;&#x6587;">&#x67E5;&#x8BE2;&#x4E0A;&#x4E0B;&#x6587;</h5>
+<p>&#x67E5;&#x8BE2;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x7684;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x56DE;&#x7B54;&#x7684;&#x95EE;&#x9898;&#x662F;&#x2014;&#x2014;&#x201C;&#x8FD9;&#x4E2A;document&#x548C;&#x8FD9;&#x4E2A;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x7684;&#x5339;&#x914D;&#x5F97;&#x600E;&#x4E48;&#x6837;&#xFF1F;&#x201D;</p>
+<p>&#x9664;&#x4E86;&#x51B3;&#x5B9A;document&#x662F;&#x5426;&#x5339;&#x914D;&#xFF0C;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x4E5F;&#x8BA1;&#x7B97;&#x4E00;&#x4E2A;&#x8868;&#x793A;document&#x76F8;&#x5BF9;&#x5176;&#x4ED6;documents&#x5339;&#x914D;&#x7A0B;&#x5EA6;&#x7684;<code>_score</code></p>
+<p>&#x5F53;&#x5C06;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x4F20;&#x9012;&#x7ED9;<code>query</code>&#x53C2;&#x6570;&#xFF0C;&#x67E5;&#x8BE2;&#x4E0A;&#x4E0B;&#x6587;&#x5C31;&#x4F1A;&#x751F;&#x6548;&#xFF0C;&#x6BD4;&#x5982;<code>search</code> API &#x4E2D;&#x7684;<code>query</code>&#x53C2;&#x6570;&#x3002;</p>
+</li>
+<li><h5 id="&#x8FC7;&#x6EE4;&#x4E0A;&#x4E0B;&#x6587;">&#x8FC7;&#x6EE4;&#x4E0A;&#x4E0B;&#x6587;</h5>
+<p>&#x5728;&#x8FC7;&#x6EE4;&#x5668;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#xFF0C;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x56DE;&#x7B54;&#x7684;&#x95EE;&#x9898;&#x662F;&#x2014;&#x2014;&#x201C;&#x8FD9;&#x4E2A;document&#x662F;&#x5426;&#x5339;&#x914D;&#x8FD9;&#x4E2A;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#xFF1F;&#x201D;&#xFF0C;&#x56DE;&#x7B54;&#x662F;Yes&#x6216;&#x8005;No&#x2014;&#x2014;&#x4E0D;&#x4F1A;&#x8BA1;&#x7B97;scores&#x3002;&#x8FC7;&#x6EE4;&#x5668;&#x4E0A;&#x4E0B;&#x6587;&#x5927;&#x591A;&#x7528;&#x4E8E;&#x8FC7;&#x6EE4;&#x7ED3;&#x6784;&#x5316;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<ul>
+<li><code>timestamp</code>&#x662F;&#x5426;&#x5728;&#x8303;&#x56F4;2015&#x81F3;2016&#x4E2D;</li>
+<li><code>status</code>&#x5C5E;&#x6027;&#x662F;&#x5426;&#x662F;<code>&quot;published&quot;</code></li>
+</ul>
+<p>&#x4E3A;&#x4E86;&#x63D0;&#x5347;&#x6027;&#x80FD;&#xFF0C;&#x9891;&#x7E41;&#x4F7F;&#x7528;&#x7684;&#x8FC7;&#x6EE4;&#x5668;&#x4F1A;&#x88AB;Elasticsearch&#x81EA;&#x52A8;&#x5730;&#x7F13;&#x5B58;&#x3002;</p>
+<p>&#x5F53;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x88AB;&#x4F20;&#x9012;&#x7ED9;<code>filter</code>&#x53C2;&#x6570;&#x65F6;&#x8FC7;&#x6EE4;&#x4E0A;&#x4E0B;&#x6587;&#x751F;&#x6548;&#xFF0C;&#x6BD4;&#x5982;<code>bool</code>&#x67E5;&#x8BE2;&#x4E2D;&#x7684;<code>filter</code>&#x6216;&#x8005;<code>must_not</code>&#x53C2;&#x6570;&#xFF0C;<code>constant_score</code>&#x67E5;&#x8BE2;&#x4E2D;&#x7684;<code>filter</code>&#x53C2;&#x6570;&#xFF0C;&#x6216;&#x8005;<code>filter</code>&#x805A;&#x5408;&#x3002;</p>
+</li>
+</ul>
+<p>&#x5982;&#x4E0B;&#x4E3A;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x88AB;&#x7528;&#x5728;<code>search</code> API&#x4E2D;&#x7684;&#x67E5;&#x8BE2;&#x4E0A;&#x4E0B;&#x6587;&#x548C;&#x8FC7;&#x6EE4;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x3002;&#x8FD9;&#x4E2A;&#x67E5;&#x8BE2;&#x4F1A;&#x5339;&#x914D;&#x6EE1;&#x8DB3;&#x4E00;&#x4E0B;&#x6240;&#x6709;&#x6761;&#x4EF6;&#x7684;documents&#xFF1A;</p>
+<ul>
+<li><code>title</code>&#x5C5E;&#x6027;&#x5305;&#x542B;<code>search</code></li>
+<li><code>content</code>&#x5C5E;&#x6027;&#x5305;&#x542B;<code>elasticsearch</code></li>
+<li><code>status</code>&#x5C5E;&#x6027;&#x4E3A;<code>published</code></li>
+<li><code>publish_state</code>&#x5C5E;&#x6027;&#x662F;&#x4E00;&#x4E2A;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;2015-01-01&#x7684;&#x65E5;&#x671F;</li>
+</ul>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+  &quot;query&quot;: { 
+    &quot;bool&quot;: { 
+      &quot;must&quot;: [
+        { &quot;match&quot;: { &quot;title&quot;:   &quot;Search&quot;        }}, 
+        { &quot;match&quot;: { &quot;content&quot;: &quot;Elasticsearch&quot; }}  
+      ],
+      &quot;filter&quot;: [ 
+        { &quot;term&quot;:  { &quot;status&quot;: &quot;published&quot; }}, 
+        { &quot;range&quot;: { &quot;publish_date&quot;: { &quot;gte&quot;: &quot;2015-01-01&quot; }}} 
+      ]
+    }
+  }
+}
+&apos;
+</code></pre>
+<ol>
+<li><code>query</code>&#x53C2;&#x6570;&#x8868;&#x793A;&#x662F;&#x67E5;&#x8BE2;&#x4E0A;&#x4E0B;&#x6587;&#xFF1B;</li>
+<li><code>bool</code>&#x548C;&#x4E24;&#x4E2A;<code>match</code>&#x8BED;&#x53E5;&#x7528;&#x5728;&#x67E5;&#x8BE2;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x5B83;&#x4EEC;&#x662F;&#x7528;&#x4E8E;&#x7ED9;document&#x7684;&#x5339;&#x914D;&#x5EA6;&#x8BC4;&#x5206;&#x7684;</li>
+<li><code>filter</code>&#x53C2;&#x6570;&#x8868;&#x793A;&#x662F;&#x8FC7;&#x6EE4;&#x4E0A;&#x4E0B;&#x6587;</li>
+<li><code>term</code>&#x548C;<code>range</code>&#x8BED;&#x53E5;&#x7528;&#x5728;&#x8FC7;&#x6EE4;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x3002;&#x5B83;&#x4EEC;&#x4F1A;&#x8FC7;&#x6EE4;&#x6389;&#x4E0D;&#x5339;&#x914D;&#x7684;documents&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x5339;&#x914D;&#x7684;documents&#x7684;score&#x3002;</li>
+</ol>
+<h4 id="match-all&#x67E5;&#x8BE2;">Match All&#x67E5;&#x8BE2;</h4>
+<p>&#x6700;&#x7B80;&#x5355;&#x7684;&#x67E5;&#x8BE2;&#xFF0C;&#x5339;&#x914D;&#x6240;&#x6709;&#x7684;documents&#xFF0C;&#x5E76;&#x7ED9;&#x5B83;&#x4EEC;&#x7684;<code>_score</code>&#x90FD;&#x662F;<code>1.0</code>&#x3002;</p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+    &quot;query&quot;: {
+        &quot;match_all&quot;: {}
+    }
+}&apos;
+</code></pre>
+<p>&#x4F7F;&#x7528;<code>boost</code>&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x6539;&#x53D8;<code>_score</code>&#xFF1A;</p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+    &quot;query&quot;: {
+        &quot;match_all&quot;: { &quot;boost&quot; : 1.2 }
+    }
+}&apos;
+</code></pre>
+<h4 id="match-none&#x67E5;&#x8BE2;">Match None&#x67E5;&#x8BE2;</h4>
+<p>&#x4E0D;&#x5339;&#x914D;&#x4EFB;&#x4F55;documents</p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+    &quot;query&quot;: {
+        &quot;match_none&quot;: {}
+    }
+}&apos;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="search-apis/request-body-search.html" class="navigation navigation-prev " aria-label="Previous page: Request Body Search">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="query-dsl/001.html" class="navigation navigation-next " aria-label="Next page: 全文检索">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Query DSL","level":"1.5","depth":1,"next":{"title":"全文检索","level":"1.5.1","depth":2,"path":"query-dsl/001.md","ref":"query-dsl/001.md","articles":[]},"previous":{"title":"Request Body Search","level":"1.4.2","depth":2,"path":"search-apis/request-body-search.md","ref":"search-apis/request-body-search.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"query-dsl.md","mtime":"2021-06-30T07:39:28.163Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-09-02T09:49:04.244Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

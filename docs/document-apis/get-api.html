@@ -1,0 +1,554 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Get Delete · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="update-api.html" />
+    
+    
+    <link rel="prev" href="index-api.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../api-conventions.html">
+            
+                <a href="../api-conventions.html">
+            
+                    
+                    API 约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../document-apis.html">
+            
+                <a href="../document-apis.html">
+            
+                    
+                    Document APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="index-api.html">
+            
+                <a href="index-api.html">
+            
+                    
+                    Index API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="get-api.html">
+            
+                <a href="get-api.html">
+            
+                    
+                    Get Delete
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="update-api.html">
+            
+                <a href="update-api.html">
+            
+                    
+                    Update Multi_Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="bulk-api.html">
+            
+                <a href="bulk-api.html">
+            
+                    
+                    Bulk Reindex Termvectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../search-apis.html">
+            
+                <a href="../search-apis.html">
+            
+                    
+                    Search APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../search-apis/uri-search.html">
+            
+                <a href="../search-apis/uri-search.html">
+            
+                    
+                    URI Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../search-apis/request-body-search.html">
+            
+                <a href="../search-apis/request-body-search.html">
+            
+                    
+                    Request Body Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../query-dsl.html">
+            
+                <a href="../query-dsl.html">
+            
+                    
+                    Query DSL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../query-dsl/001.html">
+            
+                <a href="../query-dsl/001.html">
+            
+                    
+                    全文检索
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../java-api.html">
+            
+                <a href="../java-api.html">
+            
+                    
+                    Java API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Get Delete</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="1&#x3001;get-api">1&#x3001;Get API</h3>
+<p>get Api &#x901A;&#x8FC7; document id &#x6765;&#x4ECE; index &#x83B7;&#x53D6; document&#x3002;</p>
+<pre><code class="lang-shell">GET twitter/_doc/0
+</code></pre>
+<p>&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;_index&quot;</span> : <span class="hljs-string">&quot;twitter&quot;</span>,
+    <span class="hljs-string">&quot;_type&quot;</span> : <span class="hljs-string">&quot;_doc&quot;</span>,
+    <span class="hljs-string">&quot;_id&quot;</span> : <span class="hljs-string">&quot;0&quot;</span>,
+    <span class="hljs-string">&quot;_version&quot;</span> : <span class="hljs-number">1</span>,
+    <span class="hljs-string">&quot;_seq_no&quot;</span> : <span class="hljs-number">10</span>,
+    <span class="hljs-string">&quot;_primary_term&quot;</span> : <span class="hljs-number">1</span>,
+    <span class="hljs-string">&quot;found&quot;</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-string">&quot;_source&quot;</span> : {
+        <span class="hljs-string">&quot;user&quot;</span> : <span class="hljs-string">&quot;kimchy&quot;</span>,
+        <span class="hljs-string">&quot;date&quot;</span> : <span class="hljs-string">&quot;2009-11-15T14:12:12&quot;</span>,
+        <span class="hljs-string">&quot;likes&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;message&quot;</span> : <span class="hljs-string">&quot;trying out Elasticsearch&quot;</span>
+    }
+}
+</code></pre>
+<p>&#x7ED3;&#x679C;&#x5305;&#x542B;&#x4E86;&#x60F3;&#x8981;&#x83B7;&#x53D6;&#x7684;document &#x7684; <code>_index</code>&#x3001;<code>_type</code>&#x3001;<code>_id</code>&#x3001;<code>_version</code>&#xFF0C;&#x5982;&#x679C;&#x80FD;&#x591F;&#x83B7;&#x53D6;&#x5230;&#xFF08;<code>found</code> &#x4E3A; <code>true</code>&#xFF09; document &#x5219;&#x4F1A;&#x6709;document &#x7684;&#x5B9E;&#x9645; <code>_source</code>&#x3002;</p>
+<p>&#x4F7F;&#x7528; <code>HEAD</code> &#x8BF7;&#x6C42;&#x53EF;&#x4EE5;&#x68C0;&#x9A8C; document &#x662F;&#x5426;&#x5B58;&#x5728;&#xFF1A;</p>
+<pre><code class="lang-shell">HEAD twitter/_doc/0
+</code></pre>
+<h4 id="11&#x3001;&#x5B9E;&#x65F6;&#x7684;">1.1&#x3001;&#x5B9E;&#x65F6;&#x7684;</h4>
+<p>&#x9ED8;&#x8BA4;&#xFF0C;get API &#x662F;&#x5B9E;&#x65F6;&#x7684;&#xFF0C;&#x4E0D;&#x4F1A;&#x53D7; index &#x5237;&#x65B0;&#x9891;&#x7387;&#x7684;&#x5F71;&#x54CD;&#x3002;&#x5982;&#x679C; document &#x88AB;&#x66F4;&#x65B0;&#xFF0C;&#x4F46;&#x662F;&#x8FD8;&#x6CA1;&#x6709;&#x5237;&#x65B0;&#xFF0C;get API &#x4F1A;&#x53D1;&#x8D77;&#x4E00;&#x4E2A;&#x5237;&#x65B0;&#x6765;&#x4F7F; document &#x53EF;&#x89C1;&#x3002;&#x8FD9;&#x4F1A;&#x5BFC;&#x81F4;&#x4E0A;&#x6B21;&#x5237;&#x65B0;&#x4E4B;&#x540E;&#x6539;&#x53D8;&#x7684;document &#x53D8;&#x5F97;&#x53EF;&#x89C1;&#x3002;&#x5982;&#x679C;&#x8981;&#x5173;&#x95ED;&#x5B9E;&#x65F6; GET&#xFF0C;&#x8BBE;&#x7F6E; <code>realtime</code> &#x53C2;&#x6570;&#x4E3A; <code>false</code>&#x3002;</p>
+<h4 id="12&#x3001;routing">1.2&#x3001;Routing</h4>
+<p>&#x5982;&#x679C; indexing &#x65F6;&#x4F7F;&#x7528;&#x4E86;<code>routing</code>&#xFF0C;&#x4E3A;&#x4E86;&#x53D6;&#x5230; document&#xFF0C;&#x4E5F;&#x5E94;&#x8BE5;&#x6307;&#x5B9A; <code>routing</code>&#xFF1A;</p>
+<pre><code class="lang-shell">GET twitter/_doc/2?routing=user1
+</code></pre>
+<p>&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;&#x9519;&#x8BEF;&#x7684; <code>routing</code> &#x5C06;&#x53D6;&#x4E0D;&#x5230; document&#x3002;</p>
+<h4 id="13&#x3001;&#x7248;&#x672C;&#x652F;&#x6301;">1.3&#x3001;&#x7248;&#x672C;&#x652F;&#x6301;</h4>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>version</code> &#x53C2;&#x6570;&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7248;&#x672C;&#x7684; document&#x3002;</p>
+<p>&#x5728;&#x5185;&#x90E8;&#xFF0C;ES &#x6807;&#x8BB0;&#x65E7;&#x7684; document &#x4E3A;deleted&#xFF0C;&#x5E76;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5168;&#x65B0;&#x7684;document&#x3002;&#x65E7;&#x7248;&#x672C;&#x7684; document &#x4E0D;&#x4F1A;&#x9A6C;&#x4E0A;&#x6D88;&#x5931;&#xFF0C;&#x5C3D;&#x7BA1;&#x4E0D;&#x80FD;&#x8BBF;&#x95EE;&#x5B83;&#x3002;index &#x66F4;&#x591A;&#x6570;&#x636E;&#x65F6;&#xFF0C;ES &#x4F1A;&#x5728;&#x540E;&#x53F0;&#x6E05;&#x7406;deleted documents&#x3002;</p>
+<h3 id="2&#x3001;delete-api">2&#x3001;Delete API</h3>
+<p>&#x6839;&#x636E;&#x6307;&#x5B9A;&#x7684; document id &#x5220;&#x9664; document&#x3002;</p>
+<pre><code class="lang-console">DELETE /twitter/_doc/1
+</code></pre>
+<p>&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;_shards&quot;</span> : {
+        <span class="hljs-string">&quot;total&quot;</span> : <span class="hljs-number">2</span>,
+        <span class="hljs-string">&quot;failed&quot;</span> : <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;successful&quot;</span> : <span class="hljs-number">2</span>
+    },
+    <span class="hljs-string">&quot;_index&quot;</span> : <span class="hljs-string">&quot;twitter&quot;</span>,
+    <span class="hljs-string">&quot;_type&quot;</span> : <span class="hljs-string">&quot;_doc&quot;</span>,
+    <span class="hljs-string">&quot;_id&quot;</span> : <span class="hljs-string">&quot;1&quot;</span>,
+    <span class="hljs-string">&quot;_version&quot;</span> : <span class="hljs-number">2</span>,
+    <span class="hljs-string">&quot;_primary_term&quot;</span>: <span class="hljs-number">1</span>,
+    <span class="hljs-string">&quot;_seq_no&quot;</span>: <span class="hljs-number">5</span>,
+    <span class="hljs-string">&quot;result&quot;</span>: <span class="hljs-string">&quot;deleted&quot;</span>
+}
+</code></pre>
+<h4 id="21&#x3001;&#x7248;&#x672C;">2.1&#x3001;&#x7248;&#x672C;</h4>
+<p>&#x6BCF;&#x4E2A;&#x88AB;indexed&#x7684; document &#x90FD;&#x662F;&#x6709;&#x7248;&#x672C;&#x7684;&#x3002;&#x5220;&#x9664; document &#x65F6;&#xFF0C;&#x652F;&#x6301;&#x63D0;&#x4F9B; <code>version</code> &#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x88AB;&#x5220;&#x9664;&#x7684; document &#x662F;&#x60F3;&#x8981;&#x5220;&#x9664;&#x7684;&#xFF0C;&#x5E76;&#x786E;&#x4FDD;&#x4E0E;&#x6B64;&#x540C;&#x65F6; document &#x6CA1;&#x6709;&#x88AB;&#x6539;&#x53D8;&#x3002;&#x5BF9; document &#x7684;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x5305;&#x62EC;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#x90FD;&#x4F1A;&#x5BFC;&#x81F4; document &#x7248;&#x672C;&#x589E;&#x52A0;&#x3002;</p>
+<h4 id="22&#x3001;routing">2.2&#x3001;Routing</h4>
+<p>indexing document &#x65F6;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E86; <code>routing</code>&#xFF0C;&#x5220;&#x9664; document &#x65F6;&#x4E5F;&#x5E94;&#x8BE5;&#x63D0;&#x4F9B; <code>routing</code>&#xFF1A;</p>
+<pre><code class="lang-shell">DELETE /twitter/_doc/1?routing=kimchy
+</code></pre>
+<p><code>routing</code> &#x9519;&#x8BEF;&#xFF0C;&#x5220;&#x9664;&#x4F1A;&#x5931;&#x8D25;&#x3002;</p>
+<h4 id="23&#x3001;&#x5237;&#x65B0;">2.3&#x3001;&#x5237;&#x65B0;</h4>
+<p>&#x652F;&#x6301;&#x5237;&#x65B0; <code>?refresh</code> &#x53C2;&#x6570;&#x3002;</p>
+<h3 id="3&#x3001;delete-by-query-api">3&#x3001;Delete By Query API</h3>
+<p>&#x6309;&#x7167;&#x67E5;&#x8BE2;&#x5220;&#x9664; <code>_delete_by_query</code>&#xFF0C;&#x5220;&#x9664;&#x5339;&#x914D;&#x67E5;&#x8BE2;&#x7684;&#x6240;&#x6709; document&#xFF1A;</p>
+<pre><code class="lang-shell">POST twitter/_delete_by_query
+{
+  &quot;query&quot;: { 
+    &quot;match&quot;: {
+      &quot;message&quot;: &quot;some message&quot;
+    }
+  }
+}
+</code></pre>
+<p>&#x67E5;&#x8BE2;&#x5185;&#x5BB9;&#x5FC5;&#x987B;&#x4F5C;&#x4E3A; <code>query</code> &#x7684;&#x503C;&#x4F20;&#x9012;&#xFF0C;&#x67E5;&#x8BE2;&#x4E0E; Search API &#x76F8;&#x540C;&#x3002;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;took&quot;</span> : <span class="hljs-number">147</span>,
+  <span class="hljs-string">&quot;timed_out&quot;</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-string">&quot;deleted&quot;</span>: <span class="hljs-number">119</span>,
+  <span class="hljs-string">&quot;batches&quot;</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-string">&quot;version_conflicts&quot;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-string">&quot;noops&quot;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-string">&quot;retries&quot;</span>: {
+    <span class="hljs-string">&quot;bulk&quot;</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;search&quot;</span>: <span class="hljs-number">0</span>
+  },
+  <span class="hljs-string">&quot;throttled_millis&quot;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-string">&quot;requests_per_second&quot;</span>: <span class="hljs-number">-1.0</span>,
+  <span class="hljs-string">&quot;throttled_until_millis&quot;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-number">119</span>,
+  <span class="hljs-string">&quot;failures&quot;</span> : [ ]
+}
+</code></pre>
+<p><code>_delete_by_query</code> &#x542F;&#x52A8;&#x65F6;&#x4F1A;&#x83B7;&#x53D6; index &#x7684;&#x5FEB;&#x7167;&#xFF0C;&#x4F7F;&#x7528; <code>internal</code> &#x7248;&#x672C;&#x6267;&#x884C;&#x5220;&#x9664;&#x3002;&#x5982;&#x679C;&#x671F;&#x95F4; document &#x53D8;&#x5316;&#xFF0C;&#x5219;&#x4F1A;&#x6709;&#x7248;&#x672C;&#x51B2;&#x7A81;&#x3002;&#x5339;&#x914D;&#x7684;&#x7248;&#x672C;&#x624D;&#x4F1A;&#x88AB;&#x5220;&#x9664;&#x3002;</p>
+<p><code>_delete_by_query</code> &#x662F;&#x8FB9;&#x67E5;&#x8BE2;&#x8FB9;&#x5220;&#x9664;&#xFF0C;&#x4E00;&#x4E2A;&#x6279;&#x6B21;&#x4E00;&#x4E2A;&#x6279;&#x6B21;&#x7684;&#x6267;&#x884C;&#x7684;&#x3002;&#x5220;&#x9664;&#x5931;&#x8D25;&#x4F1A;&#x91CD;&#x8BD5;&#xFF0C;&#x91CD;&#x8BD5;&#x6B21;&#x6570;&#x8D85;&#x8FC7;&#x9650;&#x5236;&#x5219;&#x653E;&#x5F03;&#x8BE5;&#x6279;&#x6B21;&#x5E76;&#x5C06;&#x5931;&#x8D25;&#x8BA1;&#x5165;&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#x7684; <code>failures</code>&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x6027;&#x5220;&#x9664;&#x591A;&#x4E2A; index &#x7684;&#x591A;&#x4E2A; type &#x7684; documents&#xFF1A;</p>
+<pre><code class="lang-shell">POST twitter,blog/_docs,post/_delete_by_query
+{
+  &quot;query&quot;: {
+    &quot;match_all&quot;: {}
+  }
+}
+</code></pre>
+<p>&#x4E5F;&#x652F;&#x6301; <code>routing</code> &#x53C2;&#x6570;&#x3002;</p>
+<h4 id="31&#x3001;&#x642D;&#x914D;task-api-&#x4F7F;&#x7528;">3.1&#x3001;&#x642D;&#x914D;Task API &#x4F7F;&#x7528;</h4>
+<p>&#x4F7F;&#x7528; Task API &#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x4EFB;&#x610F;&#x6267;&#x884C;&#x4E2D;&#x7684; <code>_delete_by_query</code> &#x7684;&#x72B6;&#x6001;&#xFF1A;</p>
+<pre><code class="lang-shell">GET _tasks?detailed=true&amp;actions=*/delete/byquery
+</code></pre>
+<p>&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;nodes&quot;</span> : {
+    <span class="hljs-string">&quot;r1A2WoRbTwKZ516z6NEs5A&quot;</span> : {
+      <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;r1A2WoR&quot;</span>,
+      <span class="hljs-string">&quot;transport_address&quot;</span> : <span class="hljs-string">&quot;127.0.0.1:9300&quot;</span>,
+      <span class="hljs-string">&quot;host&quot;</span> : <span class="hljs-string">&quot;127.0.0.1&quot;</span>,
+      <span class="hljs-string">&quot;ip&quot;</span> : <span class="hljs-string">&quot;127.0.0.1:9300&quot;</span>,
+      <span class="hljs-string">&quot;attributes&quot;</span> : {
+        <span class="hljs-string">&quot;testattr&quot;</span> : <span class="hljs-string">&quot;test&quot;</span>,
+        <span class="hljs-string">&quot;portsfile&quot;</span> : <span class="hljs-string">&quot;true&quot;</span>
+      },
+      <span class="hljs-string">&quot;tasks&quot;</span> : {
+        <span class="hljs-string">&quot;r1A2WoRbTwKZ516z6NEs5A:36619&quot;</span> : {
+          <span class="hljs-string">&quot;node&quot;</span> : <span class="hljs-string">&quot;r1A2WoRbTwKZ516z6NEs5A&quot;</span>,
+          <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-number">36619</span>,
+          <span class="hljs-string">&quot;type&quot;</span> : <span class="hljs-string">&quot;transport&quot;</span>,
+          <span class="hljs-string">&quot;action&quot;</span> : <span class="hljs-string">&quot;indices:data/write/delete/byquery&quot;</span>,
+          <span class="hljs-string">&quot;status&quot;</span> : {    
+            <span class="hljs-string">&quot;total&quot;</span> : <span class="hljs-number">6154</span>,
+            <span class="hljs-string">&quot;updated&quot;</span> : <span class="hljs-number">0</span>,
+            <span class="hljs-string">&quot;created&quot;</span> : <span class="hljs-number">0</span>,
+            <span class="hljs-string">&quot;deleted&quot;</span> : <span class="hljs-number">3500</span>,
+            <span class="hljs-string">&quot;batches&quot;</span> : <span class="hljs-number">36</span>,
+            <span class="hljs-string">&quot;version_conflicts&quot;</span> : <span class="hljs-number">0</span>,
+            <span class="hljs-string">&quot;noops&quot;</span> : <span class="hljs-number">0</span>,
+            <span class="hljs-string">&quot;retries&quot;</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">&quot;throttled_millis&quot;</span>: <span class="hljs-number">0</span>
+          },
+          <span class="hljs-string">&quot;description&quot;</span> : <span class="hljs-string">&quot;&quot;</span>
+        }
+      }
+    }
+  }
+}
+</code></pre>
+<p>&#x7528; task id &#x6765;&#x67E5;&#x770B;task&#xFF1A;</p>
+<pre><code class="lang-shell">GET /_tasks/r1A2WoRbTwKZ516z6NEs5A:36619
+</code></pre>
+<p>&#x8FD8;&#x53EF;&#x4EE5;&#x53D6;&#x6D88; task&#xFF1A;</p>
+<pre><code class="lang-shell">POST _tasks/r1A2WoRbTwKZ516z6NEs5A:36619/_cancel
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="index-api.html" class="navigation navigation-prev " aria-label="Previous page: Index API">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="update-api.html" class="navigation navigation-next " aria-label="Next page: Update Multi_Get">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Get Delete","level":"1.3.2","depth":2,"next":{"title":"Update Multi_Get","level":"1.3.3","depth":2,"path":"document-apis/update-api.md","ref":"document-apis/update-api.md","articles":[]},"previous":{"title":"Index API","level":"1.3.1","depth":2,"path":"document-apis/index-api.md","ref":"document-apis/index-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"document-apis/get-api.md","mtime":"2021-07-02T03:07:23.036Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-09-02T09:49:04.244Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,600 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>全文检索 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../java-api.html" />
+    
+    
+    <link rel="prev" href="../query-dsl.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../api-conventions.html">
+            
+                <a href="../api-conventions.html">
+            
+                    
+                    API 约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../document-apis.html">
+            
+                <a href="../document-apis.html">
+            
+                    
+                    Document APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../document-apis/index-api.html">
+            
+                <a href="../document-apis/index-api.html">
+            
+                    
+                    Index API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../document-apis/get-api.html">
+            
+                <a href="../document-apis/get-api.html">
+            
+                    
+                    Get Delete
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../document-apis/update-api.html">
+            
+                <a href="../document-apis/update-api.html">
+            
+                    
+                    Update Multi_Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../document-apis/bulk-api.html">
+            
+                <a href="../document-apis/bulk-api.html">
+            
+                    
+                    Bulk Reindex Termvectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../search-apis.html">
+            
+                <a href="../search-apis.html">
+            
+                    
+                    Search APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../search-apis/uri-search.html">
+            
+                <a href="../search-apis/uri-search.html">
+            
+                    
+                    URI Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../search-apis/request-body-search.html">
+            
+                <a href="../search-apis/request-body-search.html">
+            
+                    
+                    Request Body Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../query-dsl.html">
+            
+                <a href="../query-dsl.html">
+            
+                    
+                    Query DSL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="001.html">
+            
+                <a href="001.html">
+            
+                    
+                    全文检索
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../java-api.html">
+            
+                <a href="../java-api.html">
+            
+                    
+                    Java API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >全文检索</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x5168;&#x6587;&#x67E5;&#x8BE2;&#xFF08;full-text-queries&#xFF09;">&#x5168;&#x6587;&#x67E5;&#x8BE2;&#xFF08;Full text queries&#xFF09;</h3>
+<p>&#x9AD8;&#x5C42;&#x6B21;&#xFF08;high-level&#xFF09;&#x7684;&#x5168;&#x6587;&#x67E5;&#x8BE2;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x5BF9;&#x50CF; email &#x5185;&#x5BB9;&#x8FD9;&#x6837;&#x7684;&#x5168;&#x6587;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x5168;&#x6587;&#x67E5;&#x8BE2;&#x3002;&#x5B83;&#x4EEC;&#x77E5;&#x9053;&#x67E5;&#x8BE2;&#x5C5E;&#x6027;&#x662F;&#x600E;&#x6837;&#x88AB;analyzed&#xFF08;&#x8F6C;&#x6362;&#x6587;&#x672C;&#x4E3A;token&#x6216;&#x8005;&#x8BCD;&#x7684;&#x8FC7;&#x7A0B;&#xFF09;&#x5E76;&#x4E14;&#x4F1A;&#x5728;&#x6267;&#x884C;&#x67E5;&#x8BE2;&#x4E4B;&#x524D;&#x5BF9;&#x6BCF;&#x4E2A;&#x5C5E;&#x6027;&#x5B57;&#x7B26;&#x4E32;&#x5E94;&#x7528;&#x8BE5;&#x5C5E;&#x6027;&#x7684;<code>analyzer</code>&#xFF08;&#x6216;&#x8005;<code>search_analyzer</code>&#xFF09;&#x3002;</p>
+<h4 id="1&#x3001;match&#x67E5;&#x8BE2;">1&#x3001;Match&#x67E5;&#x8BE2;</h4>
+<p><code>match</code> &#x67E5;&#x8BE2;&#x662F;&#x8FDB;&#x884C;&#x5168;&#x6587;&#x68C0;&#x7D22;&#x7684;&#x6807;&#x51C6;&#x67E5;&#x8BE2;&#xFF0C;&#x5305;&#x62EC;&#x6A21;&#x7CCA;&#x5339;&#x914D;&#xFF08;fuzzy matching&#xFF09;&#x3001;&#x77ED;&#x8BED;&#x67E5;&#x8BE2;&#xFF08;phrase queries&#xFF09;&#x3001;&#x63A5;&#x8FD1;&#x67E5;&#x8BE2;&#xFF08;proximity queries&#xFF09;&#x3002;</p>
+<p><code>match</code> &#x67E5;&#x8BE2;&#x63A5;&#x6536; text/numerics/dates&#xFF0C;&#x8FDB;&#x884C;&#x89E3;&#x6790;&#xFF08;analyze&#xFF09;&#xFF0C;&#x5E76;&#x6784;&#x5EFA;&#x67E5;&#x8BE2;&#x3002;</p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+    &quot;query&quot;: {
+        &quot;match&quot; : {
+            &quot;message&quot; : &quot;this is a test&quot;
+        }
+    }
+}
+&apos;
+</code></pre>
+<p><code>match</code> &#x67E5;&#x8BE2;&#x662F; <code>boolean</code> &#x7C7B;&#x578B;&#x7684;&#x3002;&#x5B83;&#x610F;&#x5473;&#x7740;&#x63D0;&#x4F9B;&#x7684;&#x6587;&#x672C;&#x4F1A;&#x88AB;&#x89E3;&#x6790;&#xFF0C;&#x89E3;&#x6790;&#x5904;&#x7406;&#x6839;&#x636E;&#x63D0;&#x4F9B;&#x7684;&#x6587;&#x672C;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x67E5;&#x8BE2;&#x3002;<code>operator</code> &#x6807;&#x5FD7;&#x53EF;&#x4EE5;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A; <code>or</code> &#x6216;&#x8005; <code>and</code> &#x6765;&#x63A7;&#x5236;&#x5E03;&#x5C14;&#x5B50;&#x53E5;&#xFF08;&#x9ED8;&#x8BA4; <code>or</code>&#xFF09;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;<code>analyzer</code> &#x6765;&#x6307;&#x5B9A;&#x89E3;&#x6790;&#x5904;&#x7406;&#x4F7F;&#x7528;&#x7684;&#x89E3;&#x6790;&#x5668;&#xFF08;analyzer&#xFF09;&#x3002;</p>
+<p>&#x8BBE;&#x7F6E; <code>lenient</code> &#x53C2;&#x6570;&#x4E3A; <code>true</code> &#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E0D;&#x5339;&#x914D;&#x5BFC;&#x81F4;&#x7684;&#x5F02;&#x5E38;&#x3002;&#x9ED8;&#x8BA4; <code>false</code>&#x3002;</p>
+<p>&#x4F7F;&#x7528; <code>fuzziness</code> &#x6765;&#x8FDB;&#x884C;&#x6A21;&#x7CCA;&#x5339;&#x914D;&#xFF0C;&#x8BE6;&#x89C1;<a href="https://www.elastic.co/guide/en/elasticsearch/reference/5.4/common-options.html#fuzziness" target="_blank">&#x94FE;&#x63A5;</a>&#x3002;</p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+    &quot;query&quot;: {
+        &quot;match&quot; : {
+            &quot;message&quot; : {
+                &quot;query&quot; : &quot;this is a test&quot;,
+                &quot;operator&quot; : &quot;and&quot;
+            }
+        }
+    }
+}
+&apos;
+</code></pre>
+<p>&#x5982;&#x679C;&#x89E3;&#x6790;&#x5668;&#x50CF;&#x4E00;&#x4E2A; <code>stop</code> &#x8FC7;&#x6EE4;&#x5668;&#x4E00;&#x6837;&#x79FB;&#x9664;&#x4E86;&#x67E5;&#x8BE2;&#x7684;&#x6240;&#x6709; tokens&#xFF0C;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#x662F;&#x5339;&#x914D;&#x4E0D;&#x5230;&#x4EFB;&#x4F55;&#x6587;&#x6863;&#x3002;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E; <code>zero_terms_query</code> &#x9009;&#x9879;&#xFF08;&#x9ED8;&#x8BA4; <code>none</code>&#xFF09;&#x4E3A; <code>all</code>&#xFF0C;&#x6B64;&#x65F6;&#x7C7B;&#x4F3C;&#x4E8E; <code>match_all</code> &#x67E5;&#x8BE2;&#x3002;</p>
+<p><code>match</code> &#x67E5;&#x8BE2;&#x652F;&#x6301;<strong>&#x622A;&#x6B62;&#x9891;&#x7387;</strong>&#xFF08;cutoff frequency&#xFF09;&#x3002;</p>
+<h4 id="2&#x3001;match-phrase&#x67E5;&#x8BE2;">2&#x3001;Match Phrase&#x67E5;&#x8BE2;</h4>
+<p><code>match_phrase</code> &#x67E5;&#x8BE2;&#x89E3;&#x6790;&#x6587;&#x672C;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x89E3;&#x6790;&#x7684;&#x6587;&#x672C;&#x6784;&#x5EFA;&#x4E00;&#x4E2A; <code>phrase</code> &#x67E5;&#x8BE2;&#x3002;</p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+    &quot;query&quot;: {
+        &quot;match_phrase&quot; : {
+            &quot;message&quot; : &quot;this is a test&quot;
+        }
+    }
+}
+&apos;
+</code></pre>
+<p>&#x77ED;&#x8BED;&#x67E5;&#x8BE2;&#x6309;&#x7167;&#x4EFB;&#x610F;&#x987A;&#x5E8F;&#x5339;&#x914D;&#x6700;&#x591A;<code>slop</code>&#xFF08;&#x9ED8;&#x8BA4; 0&#xFF09;&#x4E2A;&#x9879;&#xFF08;term&#xFF09;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x6307;&#x5B9A;<code>analyzer</code>&#x3002;</p>
+<h4 id="3&#x3001;match-phrase-prefix&#x67E5;&#x8BE2;">3&#x3001;Match Phrase Prefix&#x67E5;&#x8BE2;</h4>
+<p><code>match_phrase_prefix</code>&#x4E0E;<code>match_phrase</code> &#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x989D;&#x5916;&#x6307;&#x5B9A;<code>max_expansions</code>&#xFF08;&#x9ED8;&#x8BA4; 50&#xFF09;&#x6765;&#x63A7;&#x5236;&#x540E;&#x7F00;term&#x7684;&#x6570;&#x91CF;&#x3002;&#x4E0D;&#x5E94;&#x8BBE;&#x7F6E;&#x592A;&#x5927;&#xFF0C;&#x8D8A;&#x5927;&#x67E5;&#x8BE2;&#x65F6;&#x95F4;&#x8D8A;&#x957F;&#x3002;</p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+    &quot;query&quot;: {
+        &quot;match_phrase_prefix&quot; : {
+            &quot;message&quot; : {
+                &quot;query&quot; : &quot;quick brown f&quot;,
+                &quot;max_expansions&quot; : 10
+            }
+        }
+    }
+}
+&apos;
+</code></pre>
+<h4 id="4&#x3001;multi-match&#x67E5;&#x8BE2;">4&#x3001;Multi Match&#x67E5;&#x8BE2;</h4>
+<p><code>multi_match</code> &#x67E5;&#x8BE2;&#x57FA;&#x4E8E; <code>match</code> &#x67E5;&#x8BE2;&#xFF0C;&#x63D0;&#x4F9B;&#x5BF9;&#x591A;&#x4E2A;&#x5C5E;&#x6027;&#x7684;&#x67E5;&#x8BE2;&#xFF1A;</p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+  &quot;query&quot;: {
+    &quot;multi_match&quot; : {
+      &quot;query&quot;:    &quot;this is a test&quot;, 
+      &quot;fields&quot;: [ &quot;subject&quot;, &quot;message&quot; ] 
+    }
+  }
+}
+&apos;
+</code></pre>
+<p><code>query</code> &#x662F;&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x5B57;&#x7B26;&#x4E32;</p>
+<p><code>fields</code> &#x662F;&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x652F;&#x6301;&#x901A;&#x914D;&#x7B26;&#xFF1A;</p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+  &quot;query&quot;: {
+    &quot;multi_match&quot; : {
+      &quot;query&quot;:    &quot;Will Smith&quot;,
+      &quot;fields&quot;: [ &quot;title&quot;, &quot;*_name&quot; ] 
+    }
+  }
+}
+&apos;
+</code></pre>
+<h4 id="5&#x3001;common-terms&#x67E5;&#x8BE2;">5&#x3001;Common Terms&#x67E5;&#x8BE2;</h4>
+<p><code>common</code> &#x9879;&#x67E5;&#x8BE2;&#x76F8;&#x6BD4; stopwords &#x662F;&#x4E00;&#x4E2A;&#x65F6;&#x9AE6;&#x7684;&#x9009;&#x9879;&#xFF0C;&#x63D0;&#x5347;&#x4E86;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x7CBE;&#x5EA6;&#x548C;recall&#x7684;&#x540C;&#x65F6;&#xFF08;&#x4E5F;&#x8003;&#x8651;&#x5230;&#x4E86;stopwords&#xFF09;&#xFF0C;&#x4E0D;&#x727A;&#x7272;&#x6027;&#x80FD;&#x3002;</p>
+<p>&#x67E5;&#x8BE2;&#x4E2D;&#x7684;&#x6BCF;&#x9879;&#x90FD;&#x6709;&#x5F00;&#x9500;&#x3002;&#x6BD4;&#x5982;&#xFF0C;<code>&quot;the brown fox&quot;</code> &#x67E5;&#x8BE2;&#x9700;&#x8981;&#x4E09;&#x4E2A;&#x9879;&#x7684;&#x67E5;&#x8BE2;&#xFF0C;&#x5176;&#x4E2D;<code>&quot;the&quot;</code>&#x53EF;&#x80FD;&#x4F1A;&#x5339;&#x914D;&#x5230;&#x7684;&#x6587;&#x6863;&#x6BD4;&#x8F83;&#x591A;&#xFF0C;&#x5E76;&#x4E14;&#x76F8;&#x6BD4;&#x5176;&#x5B83;&#x4E24;&#x9879;&#x5BF9;&#x5173;&#x8054;&#x5F71;&#x54CD;&#x8F83;&#x5C0F;&#x3002;&#x4E4B;&#x524D;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x662F;&#x5C06;&#x9AD8;&#x9891;&#x9879;<code>&quot;the&quot;</code>&#x4F5C;&#x4E3A;stopword&#xFF0C;&#x51CF;&#x5C11;&#x7D22;&#x5F15;&#x5927;&#x5C0F;&#x548C;&#x6267;&#x884C;&#x7684;&#x67E5;&#x8BE2;&#x9879;&#x3002;&#x4F46;&#x662F;&#xFF0C;stopwords &#x867D;&#x7136;&#x5BF9;&#x5173;&#x8054;&#x5F71;&#x54CD;&#x5C0F;&#xFF0C;&#x4ECD;&#x7136;&#x662F;&#x91CD;&#x8981;&#x7684;&#x3002;&#x5982;&#x679C;&#x79FB;&#x9664;stopwords&#xFF0C;&#x4F1A;&#x4E22;&#x5931;&#x7CBE;&#x5EA6;&#xFF08;&#x6BD4;&#x5982;&#x4E0D;&#x80FD;&#x533A;&#x5206;<code>&quot;happy&quot;</code>&#x548C; <code>not happy</code>&#xFF09;&#x548C;recall&#xFF08;&#x6BD4;&#x5982;&#xFF0C;<code>&quot;the the&quot;</code>&#x6216;<code>&quot;to be or not to be&quot;</code>&#x5728;&#x7D22;&#x5F15;&#x4E2D;&#x4F1A;&#x4E0D;&#x5B58;&#x5728;&#xFF09;&#x3002;</p>
+<p><code>common</code> &#x9879;&#x67E5;&#x8BE2;&#x5C06;&#x67E5;&#x8BE2;&#x9879;&#x5206;&#x4E3A;&#x4E24;&#x7EC4;&#xFF1A;&#x66F4;&#x91CD;&#x8981;&#x7684;&#x548C;&#x66F4;&#x4E0D;&#x91CD;&#x8981;&#x7684;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x67E5;&#x8BE2;&#x66F4;&#x91CD;&#x8981;&#x7684;&#x9879;&#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E;&#x66F4;&#x4E0D;&#x91CD;&#x8981;&#x7684;&#x9879;&#x518D;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x67E5;&#x8BE2;&#x2014;&#x2014;&#x53EA;&#x67E5;&#x8BE2;&#x9996;&#x6B21;&#x67E5;&#x8BE2;&#x5339;&#x914D;&#x7684;&#x6587;&#x6863;&#x3002;</p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+    &quot;query&quot;: {
+        &quot;common&quot;: {
+            &quot;body&quot;: {
+                &quot;query&quot;: &quot;this is bonsai cool&quot;,
+                    &quot;cutoff_frequency&quot;: 0.001
+            }
+        }
+    }
+}
+&apos;
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6587;&#x6863;&#x9891;&#x7387;&#x5927;&#x4E8E; 0.1%&#x7684;&#x9879;&#xFF08;&#x6BD4;&#x5982; <code>this</code> &#x3001;<code>is</code>&#xFF09;&#x4F1A;&#x88AB;&#x5F53;&#x4F5C;&#x5E38;&#x89C1;&#x9879;&#x3002;</p>
+<p>&#x4F7F;&#x7528; <code>minimum_should_match</code> &#x3001;<code>low_freq_operator</code> &#x548C; <code>high_freq_operator</code>&#x53C2;&#x6570;&#x63A7;&#x5236;&#x5E94;&#x8BE5;&#x5339;&#x914D;&#x7684;&#x9879;&#x7684;&#x6570;&#x91CF;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x4F4E;&#x9891;&#x9879;&#xFF0C;&#x8BBE;&#x7F6E;<code>low_freq_operator</code> &#x4E3A; <code>&quot;and&quot;</code>&#x6765;&#x4F7F;&#x6240;&#x6709;&#x9879;&#x90FD;&#x6210;&#x4E3A;&#x5FC5;&#x987B;&#x9879;&#xFF1A;</p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+    &quot;query&quot;: {
+        &quot;common&quot;: {
+            &quot;body&quot;: {
+                &quot;query&quot;: &quot;nelly the elephant as a cartoon&quot;,
+                    &quot;cutoff_frequency&quot;: 0.001,
+                    &quot;low_freq_operator&quot;: &quot;and&quot;
+            }
+        }
+    }
+}
+&apos;
+</code></pre>
+<p>&#x5927;&#x81F4;&#x7B49;&#x4EF7;&#x4E8E;&#xFF1A;</p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+    &quot;query&quot;: {
+        &quot;bool&quot;: {
+            &quot;must&quot;: [
+            { &quot;term&quot;: { &quot;body&quot;: &quot;nelly&quot;}},
+            { &quot;term&quot;: { &quot;body&quot;: &quot;elephant&quot;}},
+            { &quot;term&quot;: { &quot;body&quot;: &quot;cartoon&quot;}}
+            ],
+            &quot;should&quot;: [
+            { &quot;term&quot;: { &quot;body&quot;: &quot;the&quot;}},
+            { &quot;term&quot;: { &quot;body&quot;: &quot;as&quot;}},
+            { &quot;term&quot;: { &quot;body&quot;: &quot;a&quot;}}
+            ]
+        }
+    }
+}
+&apos;
+</code></pre>
+<p>&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>minimum_should_match</code> &#x6765;&#x6307;&#x5B9A;&#x4F4E;&#x9891;&#x9879;&#x5FC5;&#x987B;&#x51FA;&#x73B0;&#x7684;&#x6700;&#x5C0F;&#x6570;&#x91CF;&#x6216;&#x6BD4;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+    &quot;query&quot;: {
+        &quot;common&quot;: {
+            &quot;body&quot;: {
+                &quot;query&quot;: &quot;nelly the elephant as a cartoon&quot;,
+                &quot;cutoff_frequency&quot;: 0.001,
+                &quot;minimum_should_match&quot;: 2
+            }
+        }
+    }
+}
+&apos;
+</code></pre>
+<p>&#x5927;&#x81F4;&#x7B49;&#x4EF7;&#x4E8E;&#xFF1A;</p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+    &quot;query&quot;: {
+        &quot;bool&quot;: {
+            &quot;must&quot;: {
+                &quot;bool&quot;: {
+                    &quot;should&quot;: [
+                    { &quot;term&quot;: { &quot;body&quot;: &quot;nelly&quot;}},
+                    { &quot;term&quot;: { &quot;body&quot;: &quot;elephant&quot;}},
+                    { &quot;term&quot;: { &quot;body&quot;: &quot;cartoon&quot;}}
+                    ],
+                    &quot;minimum_should_match&quot;: 2
+                }
+            },
+            &quot;should&quot;: [
+                { &quot;term&quot;: { &quot;body&quot;: &quot;the&quot;}},
+                { &quot;term&quot;: { &quot;body&quot;: &quot;as&quot;}},
+                { &quot;term&quot;: { &quot;body&quot;: &quot;a&quot;}}
+                ]
+        }
+    }
+}
+&apos;
+</code></pre>
+<h4 id="6&#x3001;query-string&#x67E5;&#x8BE2;">6&#x3001;Query String&#x67E5;&#x8BE2;</h4>
+<p><code>query_string</code></p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+    &quot;query&quot;: {
+        &quot;query_string&quot; : {
+            &quot;default_field&quot; : &quot;content&quot;,
+            &quot;query&quot; : &quot;this AND that OR thus&quot;
+        }
+    }
+}
+&apos;
+</code></pre>
+<p>7&#x3001;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../query-dsl.html" class="navigation navigation-prev " aria-label="Previous page: Query DSL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../java-api.html" class="navigation navigation-next " aria-label="Next page: Java API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"全文检索","level":"1.5.1","depth":2,"next":{"title":"Java API","level":"1.6","depth":1,"path":"java-api.md","ref":"java-api.md","articles":[]},"previous":{"title":"Query DSL","level":"1.5","depth":1,"path":"query-dsl.md","ref":"query-dsl.md","articles":[{"title":"全文检索","level":"1.5.1","depth":2,"path":"query-dsl/001.md","ref":"query-dsl/001.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"query-dsl/001.md","mtime":"2021-05-11T03:47:38.104Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-09-02T09:49:04.244Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

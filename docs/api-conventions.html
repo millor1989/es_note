@@ -1,0 +1,701 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>API 约定 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="document-apis.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="api-conventions.html">
+            
+                <a href="api-conventions.html">
+            
+                    
+                    API 约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="document-apis.html">
+            
+                <a href="document-apis.html">
+            
+                    
+                    Document APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="document-apis/index-api.html">
+            
+                <a href="document-apis/index-api.html">
+            
+                    
+                    Index API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="document-apis/get-api.html">
+            
+                <a href="document-apis/get-api.html">
+            
+                    
+                    Get Delete
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="document-apis/update-api.html">
+            
+                <a href="document-apis/update-api.html">
+            
+                    
+                    Update Multi_Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="document-apis/bulk-api.html">
+            
+                <a href="document-apis/bulk-api.html">
+            
+                    
+                    Bulk Reindex Termvectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="search-apis.html">
+            
+                <a href="search-apis.html">
+            
+                    
+                    Search APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="search-apis/uri-search.html">
+            
+                <a href="search-apis/uri-search.html">
+            
+                    
+                    URI Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="search-apis/request-body-search.html">
+            
+                <a href="search-apis/request-body-search.html">
+            
+                    
+                    Request Body Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="query-dsl.html">
+            
+                <a href="query-dsl.html">
+            
+                    
+                    Query DSL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="query-dsl/001.html">
+            
+                <a href="query-dsl/001.html">
+            
+                    
+                    全文检索
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="java-api.html">
+            
+                <a href="java-api.html">
+            
+                    
+                    Java API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >API 约定</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="api&#x7EA6;&#x5B9A;">API&#x7EA6;&#x5B9A;</h3>
+<p>ES REST APIs &#x662F;&#x4F7F;&#x7528; JSON &#x901A;&#x8FC7; HTTP &#x6267;&#x884C;&#x7684;&#x3002;</p>
+<h4 id="1&#x3001;&#x591A;&#x4E2A;indices">1&#x3001;&#x591A;&#x4E2A;Indices</h4>
+<p>&#x4F7F;&#x7528;<code>index</code>&#x53C2;&#x6570;&#x7684;&#x5927;&#x591A;&#x6570;APIs&#x90FD;&#x652F;&#x6301;&#x8DE8;&#x591A;&#x4E2A;indices&#x6267;&#x884C;&#xFF0C;&#x6BD4;&#x5982;<code>test1,test2,test3</code>&#x8868;&#x793A;&#xFF08;&#x6216;&#x8005;<code>_all</code>&#x6765;&#x8868;&#x793A;&#x6240;&#x6709;&#x7684;indices&#xFF09;&#x3002;&#x8FD8;&#x652F;&#x6301;&#x901A;&#x914D;&#x7B26;&#xFF0C;&#x6BD4;&#x5982;<code>test*</code>&#x3001;<code>*test</code>&#x3001;<code>te*t</code>&#x6216;&#x8005;<code>*test*</code>&#xFF0C;&#x5E76;&#x4E14;&#x8FD8;&#x80FD;&#x589E;&#xFF08;<code>+</code>&#xFF09;&#x548C;&#x51CF;&#xFF08;<code>-</code>&#xFF09;&#xFF0C;&#x6BD4;&#x5982;<code>+test*,-test3</code>&#x3002;</p>
+<p>&#x6240;&#x6709;&#x7684;&#x591A;indices API&#x90FD;&#x652F;&#x6301;&#x5982;&#x4E0B;&#x7684;url&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li><p><code>ignore_unavailable</code>&#xFF1A;&#x662F;&#x5426;&#x5FFD;&#x7565;&#x6307;&#x5B9A;&#x7684;indices&#x4E2D;&#x4E0D;&#x53EF;&#x7528;&#x7684;indices&#xFF08;indices&#x4E0D;&#x53EF;&#x7528;&#xFF0C;&#x5305;&#x62EC;indices&#x4E0D;&#x5B58;&#x5728;&#x6216;&#x8005;indices&#x5DF2;&#x7ECF;&#x88AB;&#x5173;&#x95ED;&#xFF09;&#x3002;</p>
+</li>
+<li><p><code>allow_no_indices</code>&#xFF1A;&#x5982;&#x679C;&#x901A;&#x914D;&#x7B26;&#x5339;&#x914D;&#x4E0D;&#x5230;&#x5177;&#x4F53;&#x7684;indices&#xFF0C;&#x662F;&#x5426;&#x5931;&#x8D25;&#x3002;&#x5F53;&#x4F7F;&#x7528;<code>_all</code>&#xFF0C;<code>*</code>&#x6216;&#x8005;&#x6CA1;&#x6709;&#x6307;&#x5B9A;index&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x8BBE;&#x7F6E;&#x4E5F;&#x8D77;&#x4F5C;&#x7528;&#x3002;&#x5F53;&#x522B;&#x540D;&#x6307;&#x5411;&#x5173;&#x95ED;&#x7684;index&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x8BBE;&#x7F6E;&#x4E5F;&#x5E94;&#x7528;&#x4E8E;&#x522B;&#x540D;&#xFF08;alias&#xFF09;&#x3002;</p>
+</li>
+<li><p><code>expand_wildcards</code>&#xFF1A;&#x63A7;&#x5236;&#x901A;&#x914D;&#x7B26;indices&#x8868;&#x8FBE;&#x5F0F;&#x6269;&#x5C55;&#x5230;&#x54EA;&#x79CD;&#x5177;&#x4F53;&#x7684;indices&#x3002;&#x5982;&#x679C;&#x4E3A;<code>open</code>&#xFF0C;&#x901A;&#x914D;&#x7B26;&#x8868;&#x8FBE;&#x5F0F;&#x6269;&#x5C55;&#x5230;&#x6253;&#x5F00;&#x7684;indices&#xFF0C;&#x5982;&#x679C;&#x4E3A;<code>closed</code>&#x5219;&#x6269;&#x5C55;&#x5230;&#x5173;&#x95ED;&#x7684;indices&#x3002;&#x8FD8;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x6307;&#x5B9A;&#x4E3A;<code>open,closed</code>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E3A;<code>none</code>&#xFF0C;&#x901A;&#x914D;&#x7B26;&#x6269;&#x5C55;&#x4F1A;&#x5173;&#x95ED;&#xFF0C;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E3A;<code>all</code>&#xFF0C;&#x5219;&#x7B49;&#x4EF7;&#x4E8E; <code>open,closed</code>&#x3002;</p>
+</li>
+</ul>
+<h4 id="2&#x3001;index&#x540D;&#x79F0;&#x7684;date-math&#x652F;&#x6301;">2&#x3001;index&#x540D;&#x79F0;&#x7684;Date math&#x652F;&#x6301;</h4>
+<p>&#x901A;&#x8FC7;date math index&#x540D;&#x79F0;&#x89E3;&#x6790;&#xFF0C;&#x80FD;&#x591F;&#x67E5;&#x8BE2;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x7684;indices&#xFF0C;&#x4ECE;&#x800C;&#x4E0D;&#x7528;&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x65F6;&#x95F4;&#x7684;indices&#x5E76;&#x8FC7;&#x6EE4;&#x7ED3;&#x679C;&#x3002;&#x9650;&#x5236;&#x67E5;&#x8BE2;indices&#x7684;&#x6570;&#x91CF;&#x8FD8;&#x80FD;&#x964D;&#x4F4E;&#x96C6;&#x7FA4;&#x7684;&#x8D1F;&#x8F7D;&#x5E76;&#x63D0;&#x5347;&#x67E5;&#x8BE2;&#x6267;&#x884C;&#x6027;&#x80FD;&#x3002;</p>
+<p>date math index&#x7684;&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-shell">&lt;static_name{date_math_expr{date_format|time_zone}}&gt;
+</code></pre>
+<p>&#x5176;&#x4E2D;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th><code>staic_name</code></th>
+<th>&#x540D;&#x79F0;&#x7684;&#x9759;&#x6001;&#x6587;&#x672C;&#x90E8;&#x5206;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>date_math_expr</code></td>
+<td>&#x52A8;&#x6001;&#x8BA1;&#x7B97;&#x65E5;&#x671F;&#x7684;&#x52A8;&#x6001;date math&#x8868;&#x8FBE;&#x5F0F;</td>
+</tr>
+<tr>
+<td><code>date_format</code></td>
+<td>&#x8BA1;&#x7B97;&#x65E5;&#x671F;&#x4F7F;&#x7528;&#x683C;&#x5F0F;&#x3002;&#x9ED8;&#x8BA4;<code>YYYY.MM.dd</code></td>
+</tr>
+<tr>
+<td><code>time_zone</code></td>
+<td>&#x65F6;&#x533A;&#x3002;&#x9ED8;&#x8BA4;<code>utc</code></td>
+</tr>
+</tbody>
+</table>
+<p>date math index&#x540D;&#x79F0;&#x8868;&#x8FBE;&#x5F0F;&#x5FC5;&#x987B;&#x7528;&#x5C16;&#x62EC;&#x53F7;&#x5305;&#x62EC;&#xFF0C;&#x6240;&#x6709;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5E94;&#x8BE5;&#x8FDB;&#x884C;URI&#x7F16;&#x7801;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-shell"># GET /&lt;logstash-{now/d}&gt;/_search
+curl -X GET &quot;localhost:9200/%3Clogstash-%7Bnow%2Fd%7D%3E/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+  &quot;query&quot; : {
+    &quot;match&quot;: {
+      &quot;test&quot;: &quot;data&quot;
+    }
+  }
+}&apos;
+</code></pre>
+<p>&#x5047;&#x5982;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x662F;UTC 2024&#x5E74;3&#x6708;22&#x65E5;&#x4E2D;&#x5348;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;&#x548C;&#x5BF9;&#x5E94;&#x7684;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>Expression</th>
+<th>Resolves to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;logstash-{now/d}&gt;</code></td>
+<td><code>logstash-2024.03.22</code></td>
+</tr>
+<tr>
+<td><code>&lt;logstash-{now/M}&gt;</code></td>
+<td><code>logstash-2024.03.01</code></td>
+</tr>
+<tr>
+<td><code>&lt;logstash-{now/M{YYYY.MM}}&gt;</code></td>
+<td><code>logstash-2024.03</code></td>
+</tr>
+<tr>
+<td><code>&lt;logstash-{now/M-1M{YYYY.MM}}&gt;</code></td>
+<td><code>logstash-2024.02</code></td>
+</tr>
+<tr>
+<td>`&lt;logstash-{now/d{YYYY.MM.dd</td>
+<td>+12:00}}&gt;`</td>
+<td><code>logstash-2024.03.23</code></td>
+</tr>
+</tbody>
+</table>
+<p>&#x5982;&#x679C;index&#x540D;&#x79F0;&#x6A21;&#x677F;&#x7684;&#x9759;&#x6001;&#x90E8;&#x5206;&#x5305;&#x542B;&#x4E86;&#x5B57;&#x7B26;<code>{</code>&#x548C;<code>}</code>&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x53CD;&#x659C;&#x6760;<code>\</code>&#x8FDB;&#x884C;&#x8F6C;&#x4E49;&#xFF1A;</p>
+<ul>
+<li><code>&lt;elastic\{ON\}-{now/M}&gt;</code> &#x89E3;&#x6790;&#x4E3A; <code>elastic{ON}-2024.03.01</code></li>
+</ul>
+<p>&#x67E5;&#x8BE2;&#x6700;&#x8FD1;3&#x5929;&#x7684;Logstash&#xFF1A;</p>
+<pre><code class="lang-shell"># GET /&lt;logstash-{now/d-2d}&gt;,&lt;logstash-{now/d-1d}&gt;,&lt;logstash-{now/d}&gt;/_search
+curl -X GET &quot;localhost:9200/%3Clogstash-%7Bnow%2Fd-2d%7D%3E%2C%3Clogstash-%7Bnow%2Fd-1d%7D%3E%2C%3Clogstash-%7Bnow%2Fd%7D%3E/_search?pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{
+  &quot;query&quot; : {
+    &quot;match&quot;: {
+      &quot;test&quot;: &quot;data&quot;
+    }
+  }
+}&apos;
+</code></pre>
+<h4 id="3&#x3001;&#x901A;&#x7528;&#x9009;&#x9879;">3&#x3001;&#x901A;&#x7528;&#x9009;&#x9879;</h4>
+<p>&#x53EF;&#x4EE5;&#x7528;&#x5230;&#x6240;&#x6709;REST APIs&#x7684;&#x9009;&#x9879;</p>
+<h5 id="31&#x3001;&#x7F8E;&#x5316;&#x7ED3;&#x679C;">3.1&#x3001;&#x7F8E;&#x5316;&#x7ED3;&#x679C;</h5>
+<p>&#x5F53;&#x8BF7;&#x6C42;&#x8FFD;&#x52A0;&#x4E86;<code>?pretty=true</code>&#xFF0C;&#x8FD4;&#x56DE;&#x7684;JSON&#x4F1A;&#x88AB;&#x7F8E;&#x5316;&#xFF08;&#x4EC5;&#x7528;&#x4E8E;debug&#xFF09;&#x3002;&#x4E3A;&#x8BF7;&#x6C42;&#x8FFD;&#x52A0;<code>?format=yaml</code>&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x66F4;&#x5177;&#x53EF;&#x8BFB;&#x6027;&#x7684;yaml&#x683C;&#x5F0F;&#x3002;</p>
+<h5 id="32&#x3001;&#x4EBA;&#x7C7B;&#x53EF;&#x8BFB;&#x8F93;&#x51FA;">3.2&#x3001;&#x4EBA;&#x7C7B;&#x53EF;&#x8BFB;&#x8F93;&#x51FA;</h5>
+<p>&#x8FD4;&#x56DE;&#x9002;&#x5408;&#x4EBA;&#x7C7B;&#x9605;&#x8BFB;&#x683C;&#x5F0F;&#x7684;&#x7EDF;&#x8BA1;&#x6570;&#x636E;&#xFF0C;(&#x6BD4;&#x5982; <code>&quot;exists_time&quot;: &quot;1h&quot;</code> or <code>&quot;size&quot;: &quot;1kb&quot;</code>) &#x6216;&#x8005;&#x9002;&#x5408;&#x673A;&#x5668;&#x9605;&#x8BFB;&#x7684;&#x683C;&#x5F0F; (&#x6BD4;&#x5982; <code>&quot;exists_time_in_millis&quot;: 3600000</code> or <code>&quot;size_in_bytes&quot;: 1024</code>)&#x3002;<code>?human=true</code>&#x8FD4;&#x56DE;&#x9002;&#x5408;&#x4EBA;&#x8BFB;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x9002;&#x5408;&#x673A;&#x5668;&#x7684;&#x3002;</p>
+<h5 id="33&#x3001;date-math">3.3&#x3001;date math</h5>
+<p>&#x63A5;&#x6536;&#x683C;&#x5F0F;&#x5316;&#x65E5;&#x671F;&#x503C;&#x7684;&#x5927;&#x591A;&#x6570;&#x53C2;&#x6570;&#xFF0C;&#x6BD4;&#x5982;<code>range</code>&#x67E5;&#x8BE2;&#x4E2D;&#x7684;<code>gt</code>&#x548C;<code>lt</code>&#xFF0C;&#x6216;&#x8005;<code>daterange</code>&#x805A;&#x5408;&#x4E2D;&#x7684;<code>from</code>&#x548C;<code>to</code>&#x2014;&#x2014;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;date maths&#x3002;</p>
+<p>date math&#x8868;&#x8FBE;&#x5F0F;&#x4EE5;&#x4E00;&#x4E2A;&#x951A;&#x65E5;&#x671F;&#x5F00;&#x59CB;&#xFF08;&#x53EF;&#x4EE5;&#x662F;<code>now</code>&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x4EE5;<code>||</code>&#x7ED3;&#x675F;&#x7684;&#x65E5;&#x671F;&#x5B57;&#x7B26;&#x4E32;&#xFF09;&#x3002;&#x951A;&#x65E5;&#x671F;&#x53EF;&#x4EE5;&#x8DDF;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6570;&#x5B66;&#x8868;&#x8FBE;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li><code>+1h</code> - &#x52A0;1&#x5C0F;&#x65F6;</li>
+<li><code>-1d</code> - &#x51CF;&#x4E00;&#x5929;</li>
+<li><code>/d</code> - &#x622A;&#x53D6;&#x65E5;&#x671F;&#x90E8;&#x5206;</li>
+</ul>
+<p>&#x652F;&#x6301;&#x7684;&#x65E5;&#x671F;&#x5355;&#x4F4D;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th><code>y</code></th>
+<th>years</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>M</code></td>
+<td>months</td>
+</tr>
+<tr>
+<td><code>w</code></td>
+<td>weeks</td>
+</tr>
+<tr>
+<td><code>d</code></td>
+<td>days</td>
+</tr>
+<tr>
+<td><code>h</code></td>
+<td>hours</td>
+</tr>
+<tr>
+<td><code>H</code></td>
+<td>hours</td>
+</tr>
+<tr>
+<td><code>m</code></td>
+<td>minutes</td>
+</tr>
+<tr>
+<td><code>s</code></td>
+<td>seconds</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5047;&#x5982;<code>now</code>&#x662F;<code>2001-01-01 12:00:00</code>&#xFF1A;</p>
+<p><strong><code>now+1h</code></strong>&#x2014;&#x2014;&#x6BEB;&#x79D2;&#x7684;<code>now</code> &#x52A0;&#x4E00;&#x4E2A;&#x5C0F;&#x65F6;&#x3002;&#x7ED3;&#x679C;&#x662F;: <code>2001-01-01 13:00:00</code></p>
+<p><strong><code>now-1h</code></strong>&#x2014;&#x2014;&#x6BEB;&#x79D2;&#x7684;<code>now</code> &#x51CF;&#x4E00;&#x4E2A;&#x5C0F;&#x65F6;&#xFF0C;&#x7ED3;&#x679C;&#x662F;: <code>2001-01-01 11:00:00</code></p>
+<p><strong><code>now-1h/d</code></strong>&#x2014;&#x2014;&#x6BEB;&#x79D2;&#x7684;<code>now</code> &#x622A;&#x53D6;&#x65E5;&#x671F;&#x90E8;&#x5206;&#xFF0C;&#x7ED3;&#x679C;&#x662F;: <code>2001-01-01 00:00:00</code></p>
+<p><strong><code>2001-01-01\|\|+1M/d</code></strong>&#x2014;&#x2014;&#x6BEB;&#x79D2;&#x7684;<code>2001-01-01</code> &#x52A0;&#x4E00;&#x4E2A;&#x6708;&#x3002;&#x7ED3;&#x679C;&#x662F;: <code>2001-02-01 00:00:00</code></p>
+<h5 id="34&#x3001;&#x54CD;&#x5E94;&#x8FC7;&#x6EE4;">3.4&#x3001;&#x54CD;&#x5E94;&#x8FC7;&#x6EE4;</h5>
+<p>&#x6240;&#x6709;&#x7684;REST APIs&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>filter_path</code>&#x53C2;&#x6570;&#x8FC7;&#x6EE4;&#x8FD4;&#x56DE;&#x7684;&#x54CD;&#x5E94;&#x3002;</p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/_search?q=elasticsearch&amp;filter_path=took,hits.hits._id,hits.hits._score&amp;pretty&quot;
+</code></pre>
+<p>&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code>{
+  &quot;took&quot; : 3,
+  &quot;hits&quot; : {
+    &quot;hits&quot; : [
+      {
+        &quot;_id&quot; : &quot;0&quot;,
+        &quot;_score&quot; : 1.6375021
+      }
+    ]
+  }
+}
+</code></pre><p>&#x6B64;&#x5916;&#xFF0C;<code>*</code>&#x901A;&#x914D;&#x7B26;&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x5C5E;&#x6027;&#x6216;&#x8005;&#x5C5E;&#x6027;&#x540D;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF1B;<code>**</code>&#x901A;&#x914D;&#x7B26;&#x76F4;&#x63A5;&#x5339;&#x914D;&#x4EFB;&#x610F;&#x5C5E;&#x6027;&#xFF1B;<code>-</code>&#x5B57;&#x7B26;&#x6392;&#x9664;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5C5E;&#x6027;&#xFF1B;&#x540C;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x53EF;&#x4EE5;&#x65E2;&#x5305;&#x62EC;&#x6392;&#x9664;&#x8FC7;&#x6EE4;&#x53C8;&#x5305;&#x62EC;&#x5305;&#x542B;&#x8FC7;&#x6EE4;&#x3002;</p>
+<pre><code>curl -X GET &quot;localhost:9200/_cluster/state?filter_path=metadata.indices.*.state,-metadata.indices.logstash-*&amp;pretty&quot;
+</code></pre><p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x4F1A;&#x9996;&#x5148;&#x5E94;&#x7528;&#x6392;&#x9664;&#x8FC7;&#x6EE4;&#xFF0C;&#x7136;&#x540E;&#x5E94;&#x7528;&#x5305;&#x542B;&#x8FC7;&#x6EE4;&#xFF0C;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre><code>{
+  &quot;metadata&quot; : {
+    &quot;indices&quot; : {
+      &quot;index-1&quot; : {&quot;state&quot; : &quot;open&quot;},
+      &quot;index-2&quot; : {&quot;state&quot; : &quot;open&quot;},
+      &quot;index-3&quot; : {&quot;state&quot; : &quot;open&quot;}
+    }
+  }
+}
+</code></pre><p>es&#x6709;&#x65F6;&#x4F1A;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x7684;&#x539F;&#x59CB;&#x503C;&#xFF0C;&#x6BD4;&#x5982;<code>_source</code>&#x5C5E;&#x6027;&#x3002;&#x5982;&#x679C;&#x8981;&#x8FC7;&#x6EE4;<code>_source</code>&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;<code>filter_path</code>&#x53C2;&#x6570;&#x7ED3;&#x5408;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;<code>_source</code>&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#xFF1A;</p>
+<pre><code class="lang-shell">curl -X POST &quot;localhost:9200/library/book?refresh&amp;pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{&quot;title&quot;: &quot;Book #1&quot;, &quot;rating&quot;: 200.1}
+&apos;
+curl -X POST &quot;localhost:9200/library/book?refresh&amp;pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{&quot;title&quot;: &quot;Book #2&quot;, &quot;rating&quot;: 1.7}
+&apos;
+curl -X POST &quot;localhost:9200/library/book?refresh&amp;pretty&quot; -H &apos;Content-Type: application/json&apos; -d&apos;
+{&quot;title&quot;: &quot;Book #3&quot;, &quot;rating&quot;: 0.1}
+&apos;
+curl -X GET &quot;localhost:9200/_search?filter_path=hits.hits._source&amp;_source=title&amp;sort=rating:desc&amp;pretty&quot;
+</code></pre>
+<p>&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre><code>{
+  &quot;hits&quot; : {
+    &quot;hits&quot; : [ {
+      &quot;_source&quot;:{&quot;title&quot;:&quot;Book #1&quot;}
+    }, {
+      &quot;_source&quot;:{&quot;title&quot;:&quot;Book #2&quot;}
+    }, {
+      &quot;_source&quot;:{&quot;title&quot;:&quot;Book #3&quot;}
+    } ]
+  }
+}
+</code></pre><h5 id="35&#x3001;flat&#x8BBE;&#x7F6E;">3.5&#x3001;Flat&#x8BBE;&#x7F6E;</h5>
+<p><code>flat_settings</code>&#xFF0C;&#x4E3A;true&#x65F6;&#xFF0C;&#x5C06;&#x7ED3;&#x679C;&#x6241;&#x5E73;&#x5316;&#xFF1A;</p>
+<pre><code class="lang-shell">curl -X GET &quot;localhost:9200/twitter/_settings?flat_settings=true&amp;pretty&quot;
+</code></pre>
+<p>&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code>{
+  &quot;twitter&quot; : {
+    &quot;settings&quot;: {
+      &quot;index.number_of_replicas&quot;: &quot;1&quot;,
+      &quot;index.number_of_shards&quot;: &quot;1&quot;,
+      &quot;index.creation_date&quot;: &quot;1474389951325&quot;,
+      &quot;index.uuid&quot;: &quot;n6gzFZTgS664GUfx0Xrpjw&quot;,
+      &quot;index.version.created&quot;: ...,
+      &quot;index.provided_name&quot; : &quot;twitter&quot;
+    }
+  }
+}
+</code></pre><h5 id="36&#x3001;&#x53C2;&#x6570;">3.6&#x3001;&#x53C2;&#x6570;</h5>
+<p>REST&#x53C2;&#x6570;&#x9075;&#x5FAA;&#x4E0B;&#x5212;&#x7EBF;&#x5199;&#x6CD5;&#x3002;</p>
+<h5 id="37&#x3001;boolean&#x503C;">3.7&#x3001;Boolean&#x503C;</h5>
+<p>&#x6240;&#x6709;&#x7684;REST APIs&#x652F;&#x6301;&#x901A;&#x8FC7;<code>false</code>&#x3001;<code>0</code>&#x3001;<code>no</code>&#x3001;<code>off</code>&#x63D0;&#x4F9B;&#x5E03;&#x5C14;Flase&#x503C;&#x3002;&#x5176;&#x5B83;&#x503C;&#x90FD;&#x4F1A;&#x88AB;&#x5F53;&#x4F5C;True&#x503C;&#x3002;</p>
+<p>5.3.0&#x7248;&#x672C;&#x4E4B;&#x540E;&#x5E9F;&#x5F03;&#x4E86;&#x4EC5;&#x4EC5;&#x652F;&#x6301;<code>true</code>&#x6216;<code>false</code>&#x3002;</p>
+<h5 id="38&#x3001;&#x6570;&#x5B57;&#x503C;">3.8&#x3001;&#x6570;&#x5B57;&#x503C;</h5>
+<p>&#x5728;&#x652F;&#x6301;JSON&#x6570;&#x5B57;&#x7C7B;&#x578B;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x652F;&#x6301;<code>string</code>&#x6570;&#x503C;&#x3002;</p>
+<h5 id="39&#x3001;&#x65F6;&#x95F4;&#x5355;&#x4F4D;">3.9&#x3001;&#x65F6;&#x95F4;&#x5355;&#x4F4D;</h5>
+<p>&#x4F7F;&#x7528;&#x65F6;&#x957F;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x5355;&#x4F4D;&#x3002;&#x652F;&#x6301;&#x7684;&#x5355;&#x4F4D;&#x662F;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th><code>d</code></th>
+<th>days</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>h</code></td>
+<td>hours</td>
+</tr>
+<tr>
+<td><code>m</code></td>
+<td>minutes</td>
+</tr>
+<tr>
+<td><code>s</code></td>
+<td>seconds</td>
+</tr>
+<tr>
+<td><code>ms</code></td>
+<td>milliseconds</td>
+</tr>
+<tr>
+<td><code>micros</code></td>
+<td>microseconds</td>
+</tr>
+<tr>
+<td><code>nanos</code></td>
+<td>nanoseconds</td>
+</tr>
+</tbody>
+</table>
+<h5 id="310&#x3001;&#x5B57;&#x8282;&#x5927;&#x5C0F;&#x5355;&#x4F4D;">3.10&#x3001;&#x5B57;&#x8282;&#x5927;&#x5C0F;&#x5355;&#x4F4D;</h5>
+<h5 id="311&#x3001;&#x65E0;&#x5355;&#x4F4D;&#x6570;&#x91CF;">3.11&#x3001;&#x65E0;&#x5355;&#x4F4D;&#x6570;&#x91CF;</h5>
+<h5 id="312&#x3001;&#x8DDD;&#x79BB;&#x5355;&#x4F4D;">3.12&#x3001;&#x8DDD;&#x79BB;&#x5355;&#x4F4D;</h5>
+<h5 id="313&#x3001;&#x6A21;&#x7CCA;&#x6027;&#xFF08;fuzziness&#xFF09;">3.13&#x3001;&#x6A21;&#x7CCA;&#x6027;&#xFF08;fuzziness&#xFF09;</h5>
+<p>&#x67D0;&#x4E9B;&#x67E5;&#x8BE2;&#x548C;APIs&#x4F7F;&#x7528;<code>fuzziness</code> &#x53C2;&#x6570;&#xFF0C;&#x652F;&#x6301;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x975E;&#x7CBE;&#x786E;&#x7684;&#x6A21;&#x7CCA;&#x5339;&#x914D;&#x3002;</p>
+<p>&#x5F53;&#x67E5;&#x8BE2;<code>text</code>&#x6216;&#x8005;<code>keyword</code>&#x5C5E;&#x6027;&#x65F6;&#xFF0C;<code>fuzziness</code> &#x88AB;&#x89E3;&#x91CA;&#x4E3A;Levenshtein Edit Distance&#x2014;&#x2014;&#x8BA9;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x53D8;&#x5F97;&#x4E0E;&#x53E6;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x76F8;&#x540C;&#x65F6;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x53D8;&#x5316;&#x7684;&#x6570;&#x91CF;&#x3002;</p>
+<p><code>fuzziness</code> &#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E3A;&#xFF1A;</p>
+<ul>
+<li><p><code>0</code>&#xFF0C;<code>1</code>&#xFF0C;<code>2</code>&#xFF1A;&#x5141;&#x8BB8;&#x7684;&#x6700;&#x5927;Levenshtein Edit Distance</p>
+</li>
+<li><p><code>AUTO</code>&#xFF1A;&#x57FA;&#x4E8E;&#x8BCD;&#x7684;&#x957F;&#x5EA6;&#x751F;&#x6210;&#x4E00;&#x4E2A;edit distance&#x3002;&#x5BF9;&#x4E8E;&#x957F;&#x5EA6;&#xFF1A;</p>
+<p><code>0..2</code>&#xFF1A;&#x5FC5;&#x987B;&#x7CBE;&#x786E;&#x5730;&#x5339;&#x914D;</p>
+<p><code>3..5</code>&#xFF1A;&#x5141;&#x8BB8;1&#x4E2A;edit distance</p>
+<p><code>&gt;5</code>&#xFF1A;&#x5141;&#x8BB8;2&#x4E2A;edit distance</p>
+<p><code>AUTO</code>&#x662F;&#x63A8;&#x8350;&#x7684;<code>fuzziness</code> &#x503C;&#x3002;</p>
+</li>
+</ul>
+<h5 id="314&#x3001;&#x5F00;&#x542F;&#x6808;&#x8FFD;&#x8E2A;">3.14&#x3001;&#x5F00;&#x542F;&#x6808;&#x8FFD;&#x8E2A;</h5>
+<p><code>error_trace=true</code>&#xFF0C;&#x67E5;&#x770B;&#x67E5;&#x8BE2;&#x9519;&#x8BEF;&#x7684;&#x6808;&#x4FE1;&#x606F;&#x3002;</p>
+<h5 id="315&#x3001;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x8BF7;&#x6C42;&#x4F53;">3.15&#x3001;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x8BF7;&#x6C42;&#x4F53;</h5>
+<p>&#x5BF9;&#x4E8E;&#x4E0D;&#x63A5;&#x6536;&#x8BF7;&#x6C42;&#x4F53;&#x7684;&#x975E; POST &#x8BF7;&#x6C42; API&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x8BF7;&#x6C42;&#x4F53;&#x4F5C;&#x4E3A; <code>source</code> &#x67E5;&#x8BE2;&#x53C2;&#x6570;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x503C;&#x3002;&#x8FD9;&#x6837;&#x7528;&#x7684;&#x65F6;&#x5019;&#xFF0C;<code>source_content_type</code> &#x53C2;&#x6570;&#x5E94;&#x8BE5;&#x8BBE;&#x7F6E;&#x4E3A;&#x4E0E; <code>source</code> &#x53C2;&#x6570;&#x5305;&#x542B;&#x5185;&#x5BB9;&#x5BF9;&#x5E94;&#x7684; media type&#xFF0C;&#x6BD4;&#x5982; <code>appliation/json</code>&#x3002;</p>
+<h5 id="316&#x3001;content-type&#x81EA;&#x52A8;&#x68C0;&#x6D4B;">3.16&#x3001;Content-Type&#x81EA;&#x52A8;&#x68C0;&#x6D4B;</h5>
+<p>5.3&#x7248;&#x672C;&#x4E4B;&#x540E;&#x5E9F;&#x5F03;&#x4E86;&#x5FC5;&#x987B;&#x63D0;&#x4F9B;&#x5408;&#x9002;&#x7684;Content-Type header</p>
+<h4 id="4&#x3001;&#x57FA;&#x4E8E;url&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;">4&#x3001;&#x57FA;&#x4E8E;URL&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;</h4>
+<p>&#x8BB8;&#x591A;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x4EE3;&#x7406;&#x548C;&#x57FA;&#x4E8E;URL&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x6765;&#x5B89;&#x5168;&#x7684;&#x8BBF;&#x95EE;Elasticsearch indices&#x3002;&#x5BF9;&#x4E8E;<code>multi-search</code>&#x3001;<code>multi-get</code>&#x548C;<code>bulk</code>&#x8BF7;&#x6C42;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5728;URL&#x4E2D;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;index &#x5E76;&#x5728;&#x8BF7;&#x6C42;&#x4F53;&#x4E2D;&#x7684;&#x5355;&#x4E2A;&#x8BF7;&#x6C42;&#x6307;&#x5B9A;index&#x3002;&#x8FD9;&#x4F1A;&#x4F7F;&#x57FA;&#x4E8E;URL&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x53D7;&#x5230;&#x6311;&#x6218;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x7528;&#x6237;&#x8986;&#x76D6;URL&#x4E2D;&#x6307;&#x5B9A;&#x7684;index&#xFF0C;&#x53EF;&#x4EE5;&#x5728;<code>elasticsearch.yml</code>&#x6587;&#x4EF6;&#x4E2D;&#x589E;&#x52A0;&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<pre><code>rest.action.multi.allow_explicit_index: false
+</code></pre><p>&#x9ED8;&#x8BA4;&#x503C;true&#x3002;&#x8BBE;&#x7F6E;&#x4E3A;false&#x540E;&#xFF0C;es&#x4F1A;&#x62D2;&#x7EDD;&#x5728;&#x8BF7;&#x6C42;&#x4F53;&#x4E2D;&#x660E;&#x786E;&#x5730;&#x6307;&#x5B9A;index&#x7684;&#x8BF7;&#x6C42;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 入门">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="document-apis.html" class="navigation navigation-next " aria-label="Next page: Document APIs">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"API 约定","level":"1.2","depth":1,"next":{"title":"Document APIs","level":"1.3","depth":1,"path":"document-apis.md","ref":"document-apis.md","articles":[{"title":"Index API","level":"1.3.1","depth":2,"path":"document-apis/index-api.md","ref":"document-apis/index-api.md","articles":[]},{"title":"Get Delete","level":"1.3.2","depth":2,"path":"document-apis/get-api.md","ref":"document-apis/get-api.md","articles":[]},{"title":"Update Multi_Get","level":"1.3.3","depth":2,"path":"document-apis/update-api.md","ref":"document-apis/update-api.md","articles":[]},{"title":"Bulk Reindex Termvectors","level":"1.3.4","depth":2,"path":"document-apis/bulk-api.md","ref":"document-apis/bulk-api.md","articles":[]}]},"previous":{"title":"入门","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api-conventions.md","mtime":"2021-07-01T03:32:38.734Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-09-02T09:49:04.244Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,584 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Update Multi_Get · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="bulk-api.html" />
+    
+    
+    <link rel="prev" href="get-api.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../api-conventions.html">
+            
+                <a href="../api-conventions.html">
+            
+                    
+                    API 约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../document-apis.html">
+            
+                <a href="../document-apis.html">
+            
+                    
+                    Document APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="index-api.html">
+            
+                <a href="index-api.html">
+            
+                    
+                    Index API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="get-api.html">
+            
+                <a href="get-api.html">
+            
+                    
+                    Get Delete
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="update-api.html">
+            
+                <a href="update-api.html">
+            
+                    
+                    Update Multi_Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="bulk-api.html">
+            
+                <a href="bulk-api.html">
+            
+                    
+                    Bulk Reindex Termvectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../search-apis.html">
+            
+                <a href="../search-apis.html">
+            
+                    
+                    Search APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../search-apis/uri-search.html">
+            
+                <a href="../search-apis/uri-search.html">
+            
+                    
+                    URI Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../search-apis/request-body-search.html">
+            
+                <a href="../search-apis/request-body-search.html">
+            
+                    
+                    Request Body Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../query-dsl.html">
+            
+                <a href="../query-dsl.html">
+            
+                    
+                    Query DSL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../query-dsl/001.html">
+            
+                <a href="../query-dsl/001.html">
+            
+                    
+                    全文检索
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../java-api.html">
+            
+                <a href="../java-api.html">
+            
+                    
+                    Java API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Update Multi_Get</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="1&#x3001;update-api">1&#x3001;Update API</h3>
+<p> &#x57FA;&#x4E8E;&#x63D0;&#x4F9B;&#x7684;&#x811A;&#x672C;&#x6216; document &#x7247;&#x6BB5;&#xFF0C;&#x66F4;&#x65B0;&#x6307;&#x5B9A;&#x7684; document&#x3002;&#x4ECE; index &#x83B7;&#x53D6; document&#xFF0C;&#x6267;&#x884C;&#x66F4;&#x65B0;&#xFF0C;index &#x66F4;&#x65B0;&#x540E;&#x7684; document&#x3002;&#x4F1A;&#x4F7F;&#x7528;&#x7248;&#x672C;&#x6765;&#x786E;&#x4FDD;&#x5728; &#x201C;get&#x201D; &#x548C; &#x201C;reindex&#x201D; &#x671F;&#x95F4;&#x4E0D;&#x4F1A;&#x66F4;&#x65B0;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x610F;&#x5473;&#x7740; document &#x7684; full reindex</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-shell">PUT test/_doc/1
+{
+    &quot;counter&quot; : 1,
+    &quot;tags&quot; : [&quot;red&quot;]
+}
+</code></pre>
+<h4 id="11&#x3001;&#x811A;&#x672C;&#x66F4;&#x65B0;">1.1&#x3001;&#x811A;&#x672C;&#x66F4;&#x65B0;</h4>
+<p>&#x589E;&#x52A0; <code>counter</code> &#x503C;&#xFF1A;</p>
+<pre><code class="lang-shell">POST test/_doc/1/_update
+{
+    &quot;script&quot; : {
+        &quot;source&quot;: &quot;ctx._source.counter += params.count&quot;,
+        &quot;lang&quot;: &quot;painless&quot;,
+        &quot;params&quot; : {
+            &quot;count&quot; : 4
+        }
+    }
+}
+</code></pre>
+<p>&#x5F80; <code>tags</code> &#x96C6;&#x5408;&#x4E2D;&#x589E;&#x52A0; tag&#xFF1A;</p>
+<pre><code class="lang-shell">POST test/_doc/1/_update
+{
+    &quot;script&quot; : {
+        &quot;source&quot;: &quot;ctx._source.tags.add(params.tag)&quot;,
+        &quot;lang&quot;: &quot;painless&quot;,
+        &quot;params&quot; : {
+            &quot;tag&quot; : &quot;blue&quot;
+        }
+    }
+}
+</code></pre>
+<h4 id="12&#x3001;&#x4F7F;&#x7528;-document-&#x7247;&#x6BB5;&#x66F4;&#x65B0;">1.2&#x3001;&#x4F7F;&#x7528; document &#x7247;&#x6BB5;&#x66F4;&#x65B0;</h4>
+<pre><code class="lang-shell">POST test/_doc/1/_update
+{
+    &quot;doc&quot; : {
+        &quot;name&quot; : &quot;new_name&quot;
+    }
+}
+</code></pre>
+<p>&#x5982;&#x679C;&#x540C;&#x65F6;&#x6307;&#x5B9A;&#x4E86; <code>doc</code> &#x548C; <code>script</code> &#x5219;&#x5FFD;&#x7565; <code>doc</code>&#x3002;</p>
+<h3 id="2&#x3001;update-by-query-api">2&#x3001;Update By Query API</h3>
+<p><code>_update_by_query</code> &#x7684;&#x6700;&#x7B80;&#x5355;&#x5E94;&#x7528;&#x662F;&#x5BF9; index &#x7684;&#x6BCF;&#x4E2A; document &#x6267;&#x884C;&#x66F4;&#x65B0;&#x800C;&#x4E0D;&#x6539;&#x53D8; document &#x7684; source&#x3002;</p>
+<pre><code class="lang-shell">POST twitter/_update_by_query?conflicts=proceed
+</code></pre>
+<p>&#x4E0E; <code>_delete_by_query</code> &#x7C7B;&#x4F3C;&#xFF0C;<code>_update_by_query</code> &#x4E5F;&#x662F;&#x6839;&#x636E; index &#x5FEB;&#x7167;&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x3002;&#x4E5F;&#x4F1A;&#x6709;&#x7248;&#x672C;&#x51B2;&#x7A81;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x76F8;&#x6BD4; Update API&#xFF0C;&#x589E;&#x52A0;&#x4E86; <code>query</code> &#xFF1A;</p>
+<pre><code class="lang-shell">POST twitter/_update_by_query
+{
+  &quot;script&quot;: {
+    &quot;source&quot;: &quot;ctx._source.likes++&quot;,
+    &quot;lang&quot;: &quot;painless&quot;
+  },
+  &quot;query&quot;: {
+    &quot;term&quot;: {
+      &quot;user&quot;: &quot;kimchy&quot;
+    }
+  }
+}
+</code></pre>
+<p>&#x4E5F;&#x652F;&#x6301; <code>routing</code> &#x53C2;&#x6570;&#x3002;</p>
+<p>&#x901A;&#x77E5;&#x6307;&#x5B9A;&#x4E00;&#x4E2A; <code>pipeline</code> <code>_update_by_query</code> &#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Ingest Node &#x7279;&#x6027;&#xFF1A;</p>
+<pre><code class="lang-shell">PUT _ingest/pipeline/set-foo
+{
+  &quot;description&quot; : &quot;sets foo&quot;,
+  &quot;processors&quot; : [ {
+      &quot;set&quot; : {
+        &quot;field&quot;: &quot;foo&quot;,
+        &quot;value&quot;: &quot;bar&quot;
+      }
+  } ]
+}
+
+
+POST twitter/_update_by_query?pipeline=set-foo
+</code></pre>
+<h4 id="21&#x3001;&#x642D;&#x914D;-task-api-&#x4F7F;&#x7528;">2.1&#x3001;&#x642D;&#x914D; Task API &#x4F7F;&#x7528;</h4>
+<p>&#x4F7F;&#x7528; Task API &#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x6240;&#x6709;&#x8FD0;&#x884C;&#x4E2D;&#x7684; update by query &#x8BF7;&#x6C42;&#x7684;&#x72B6;&#x6001;&#xFF1A;</p>
+<pre><code class="lang-shell">GET _tasks?detailed=true&amp;actions=*byquery
+</code></pre>
+<p>&#x54CD;&#x5E94;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;nodes&quot;</span> : {
+    <span class="hljs-string">&quot;r1A2WoRbTwKZ516z6NEs5A&quot;</span> : {
+      <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;r1A2WoR&quot;</span>,
+      <span class="hljs-string">&quot;transport_address&quot;</span> : <span class="hljs-string">&quot;127.0.0.1:9300&quot;</span>,
+      <span class="hljs-string">&quot;host&quot;</span> : <span class="hljs-string">&quot;127.0.0.1&quot;</span>,
+      <span class="hljs-string">&quot;ip&quot;</span> : <span class="hljs-string">&quot;127.0.0.1:9300&quot;</span>,
+      <span class="hljs-string">&quot;attributes&quot;</span> : {
+        <span class="hljs-string">&quot;testattr&quot;</span> : <span class="hljs-string">&quot;test&quot;</span>,
+        <span class="hljs-string">&quot;portsfile&quot;</span> : <span class="hljs-string">&quot;true&quot;</span>
+      },
+      <span class="hljs-string">&quot;tasks&quot;</span> : {
+        <span class="hljs-string">&quot;r1A2WoRbTwKZ516z6NEs5A:36619&quot;</span> : {
+          <span class="hljs-string">&quot;node&quot;</span> : <span class="hljs-string">&quot;r1A2WoRbTwKZ516z6NEs5A&quot;</span>,
+          <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-number">36619</span>,
+          <span class="hljs-string">&quot;type&quot;</span> : <span class="hljs-string">&quot;transport&quot;</span>,
+          <span class="hljs-string">&quot;action&quot;</span> : <span class="hljs-string">&quot;indices:data/write/update/byquery&quot;</span>,
+          <span class="hljs-string">&quot;status&quot;</span> : {    
+            <span class="hljs-string">&quot;total&quot;</span> : <span class="hljs-number">6154</span>,
+            <span class="hljs-string">&quot;updated&quot;</span> : <span class="hljs-number">3500</span>,
+            <span class="hljs-string">&quot;created&quot;</span> : <span class="hljs-number">0</span>,
+            <span class="hljs-string">&quot;deleted&quot;</span> : <span class="hljs-number">0</span>,
+            <span class="hljs-string">&quot;batches&quot;</span> : <span class="hljs-number">4</span>,
+            <span class="hljs-string">&quot;version_conflicts&quot;</span> : <span class="hljs-number">0</span>,
+            <span class="hljs-string">&quot;noops&quot;</span> : <span class="hljs-number">0</span>,
+            <span class="hljs-string">&quot;retries&quot;</span>: {
+              <span class="hljs-string">&quot;bulk&quot;</span>: <span class="hljs-number">0</span>,
+              <span class="hljs-string">&quot;search&quot;</span>: <span class="hljs-number">0</span>
+            },
+            <span class="hljs-string">&quot;throttled_millis&quot;</span>: <span class="hljs-number">0</span>
+          },
+          <span class="hljs-string">&quot;description&quot;</span> : <span class="hljs-string">&quot;&quot;</span>
+        }
+      }
+    }
+  }
+}
+</code></pre>
+<p>&#x67E5;&#x770B;&#x4EFB;&#x52A1;&#x72B6;&#x6001;&#xFF1A;</p>
+<pre><code class="lang-shell">GET /_tasks/r1A2WoRbTwKZ516z6NEs5A:36619
+</code></pre>
+<p>&#x53D6;&#x6D88; update by query &#x4EFB;&#x52A1;&#xFF1A;</p>
+<pre><code class="lang-shell">POST _tasks/r1A2WoRbTwKZ516z6NEs5A:36619/_cancel
+</code></pre>
+<h3 id="3&#x3001;multi-get-api">3&#x3001;Multi Get API</h3>
+<p>Multi get API &#x8FD4;&#x56DE;&#x591A;&#x4E2A; documents&#x3002;&#x54CD;&#x5E94;&#x5305;&#x542B;&#x4E00;&#x4E2A; <code>docs</code> &#x7684;&#x6570;&#x7EC4;&#x2014;&#x2014;&#x5305;&#x542B;&#x4E86;&#x83B7;&#x53D6;&#x5230;&#x7684; documents&#x3002;</p>
+<pre><code class="lang-shell">GET /_mget
+{
+    &quot;docs&quot; : [
+        {
+            &quot;_index&quot; : &quot;test&quot;,
+            &quot;_type&quot; : &quot;_doc&quot;,
+            &quot;_id&quot; : &quot;1&quot;
+        },
+        {
+            &quot;_index&quot; : &quot;test&quot;,
+            &quot;_type&quot; : &quot;_doc&quot;,
+            &quot;_id&quot; : &quot;2&quot;
+        }
+    ]
+}
+</code></pre>
+<p>&#x5199;&#x6CD5;&#x53EF;&#x4EE5;&#x6539;&#x4E3A;&#x9488;&#x5BF9;&#x67D0;&#x4E2A; index &#x7684;&#xFF1A;</p>
+<pre><code class="lang-shell">GET /test/_mget
+{
+    &quot;docs&quot; : [
+        {
+            &quot;_type&quot; : &quot;_doc&quot;,
+            &quot;_id&quot; : &quot;1&quot;
+        },
+        {
+            &quot;_type&quot; : &quot;_doc&quot;,
+            &quot;_id&quot; : &quot;2&quot;
+        }
+    ]
+}
+</code></pre>
+<p>&#x6216;&#x8005;&#x9488;&#x5BF9; type &#x7684;&#xFF1A;</p>
+<pre><code class="lang-shell">GET /test/_doc/_mget
+{
+    &quot;docs&quot; : [
+        {
+            &quot;_id&quot; : &quot;1&quot;
+        },
+        {
+            &quot;_id&quot; : &quot;2&quot;
+        }
+    ]
+}
+</code></pre>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x7B80;&#x5316;&#x7684;&#x5199;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-shell">GET /test/_doc/_mget
+{
+    &quot;ids&quot; : [&quot;1&quot;, &quot;2&quot;]
+}
+</code></pre>
+<p>&#x652F;&#x6301; <code>routing</code> &#x53C2;&#x6570;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="get-api.html" class="navigation navigation-prev " aria-label="Previous page: Get Delete">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="bulk-api.html" class="navigation navigation-next " aria-label="Next page: Bulk Reindex Termvectors">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Update Multi_Get","level":"1.3.3","depth":2,"next":{"title":"Bulk Reindex Termvectors","level":"1.3.4","depth":2,"path":"document-apis/bulk-api.md","ref":"document-apis/bulk-api.md","articles":[]},"previous":{"title":"Get Delete","level":"1.3.2","depth":2,"path":"document-apis/get-api.md","ref":"document-apis/get-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"document-apis/update-api.md","mtime":"2021-07-02T05:23:08.498Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-09-02T09:49:04.244Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
